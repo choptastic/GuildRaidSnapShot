@@ -10,7 +10,7 @@ GRSS_Systems = {};
 GRSS_Full_DKP = {};
 GRSS_Bosses = {"Lucifron","Magmadar","Gehennas","Garr","Baron Geddon","Shazzrah","Sulfuron Harbinger","Golemagg the Incinerator","Ragnaros","Doom Lord Kazzak","Azuregos","Lethon","Emeriss","Onyxia","Taerar","Ysondre","Razorgore the Untamed","Vaelastrasz the Corrupt","Flamegor","Ebonroc","Firemaw","Chromaggus","Broodlord Lashlayer","Nefarian","Prophet Skeram","Lord Kri","Battleguard Sartura","Princess Huhuran","Fankriss the Unyielding","Viscidus","Ouro","C'Thun","Emperor Vek'nilash","Emperor Vek'lor","Anub'Rekhan","Grand Widow Faerlina","Maexxna","Feugen","Gluth","Gothik the Harvester","Grobbulus","Heigan the Unclean","Highlord Mograine","Instructor Razuvious","Lady Blaumeux","Loatheb","Noth the Plaguebringer","Patchwerk","Sapphiron","Sir Zeliek","Stalagg","Thaddius","Thane Korth'azz","Ossirian the Unscarred","Moam","Kurinnaxx","General Rajaxx","Buru the Gorger","Ayamiss the Hunter","Bloodlord Mandokir","Gahz'ranka","Gri'lek","Hakkar","Hazza'rah","High Priest Thekal","High Priest Venoxis","High Priestess Arlokk","High Priestess Jeklik","High Priestess Mar'li","Jin'do the Hexxer","Renataki","Wushoolay","The Crone","Hyakiss the Lurker","Julianne","Maiden of Virtue","Moroes","Netherspite","Nightbane","Prince Malchezaar","Rokad the Ravager","Romulo","Shade of Aran","Shadikith the Glider","Terestian Illhoof","The Big Bad Wolf","The Curator","Gruul the Dragonkiller","Magtheridon","High King Maulgar","Fathom-Lord Karathress","Hydross the Unstable","Lady Vashj","Leotheras the Blind","Morogrim Tidewalker","The Lurker Below","Al'ar","High Astromancer Solarian","Kael'thas Sunstrider","Void Reaver","Doomwalker","Attumen the Huntsman","Illidan Stormrage","Gathios the Shatterer","High Nethermancer Zerevor","Lady Malande","Veras Darkshadow","Essence of Anger","Gurtogg Bloodboil","Illidari Council","Teron Gorefiend","High Warlord Naj'entus","Mother Shahraz","Shade of Akama","Supremus","Anetheron","Archimonde","Azgalor","Kaz'rogal","Rage Winterchill","Nalorakk","Akil'zon","Jan'alai","Halazzi","Hex Lord Malacrass","Zul'jin","Kalecgos","Sathrovarr the Corruptor","Brutallus","Felmyst","Lady Sacrolash","Grand Warlock Alythess","M'uru","Entropius","Kil'jaeden","Kel'Thuzad","Sartharion","Archavon the Stone Watcher","Malygos","Flame Leviathan","Razorscale","XT-002 Deconstructor","Ignis the Furnace Master","Assembly of Iron","Kologarn","Auriaya","Mimiron","Hodir","Thorim","Freva","General Vezax","Yogg-Saron","Algalon the Observer","Emalon the Storm Watcher","Icehowl","Lord Jaraxxus","Fjola Lightbane","Anub'arak","Koralon the Flame Watcher","Lord Marrowgar","Lady Deathwhisper","Deathbringer Saurfang","Festergut","Rotface","Professor Putricide","Blood-Queen Lana'thal","Valithria Dreamwalker","Sindragosa","The Lich King","Prince Keleseth"
 
---[[uncomment for testing the mobs outside shattrath
+---[[uncomment for testing the mobs outside shattrath
 ,"Dreadfang Lurker","Timber Worg","Ironspine Petrifier"
 --]]
 
@@ -1102,7 +1102,7 @@ function nn(v)
 end
 
 function GuildRaidSnapShot_OnEvent(this,event,...)
-	local arg1, arg2, arg3 = ...;
+	local arg1, arg2, arg3, arg4, arg5, arg6, arg7 = ...;
 	if(event == "CHAT_MSG_MONSTER_YELL" --[[or event == "CHAT_MSG_YELL"--]]) then
 		if GRSS_Auto==1 and GRSS_Yells[arg2] ~= nil then
 			if string.find(arg1,GRSS_Yells[arg2]) ~= nil then
@@ -1142,6 +1142,7 @@ function GuildRaidSnapShot_OnEvent(this,event,...)
 	elseif(event=="PLAYER_DEAD" or event=="CHAT_MSG_COMBAT_FRIENDLY_DEATH") then
 		GRSS_WipeCheck();
 	elseif(event=="COMBAT_LOG_EVENT_UNFILTERED") then
+		GRSSPrint(arg2);
 		if(arg2=="PARTY_KILL" or arg2=="UNIT_DIED") then
 			if not IsActiveBattlefieldArena() then
 				if GRSS_FastBossLookup[arg7] ~= nil and GRSS_Auto == 1 then
