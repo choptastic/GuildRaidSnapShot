@@ -113,7 +113,7 @@ GRSSHelpMsg = {
 	"!waitlistwho = Show a list of who's on the waiting list",
 };
 
-local GRSSVersion = "2.019";
+local GRSSVersion = "2.020";
 local GRSSUsage = {
 	"Type |c00ffff00/grss <snapshotname>|r to take a snapshot (ex: |c00ffff00/grss Kel'Thuzad|r)",
 	"|c00ffff00/grss loot|r to open a loot prompt to manually record an item being received",
@@ -140,7 +140,7 @@ local GRSSUsage = {
 	};
 
 local GRSS_Colors={
---[[	
+---[[
 	["ff9d9d9d"] = "grey",
 	["ffffffff"] = "white",
 	["ff00ff00"] = "green",
@@ -175,7 +175,7 @@ function GRSS_SetItemRef(link,text,button)
 	end
 end
 
-function GuildRaidSnapShot_OnLoad()
+function GuildRaidSnapShot_OnLoad(this)
 
 	--GRSSChangeSystem(0);
 	SlashCmdList["GuildRaidSnapShot"] = GuildRaidSnapShot_SlashHandler;
@@ -223,20 +223,15 @@ function GuildRaidSnapShot_OnLoad()
 		text = "How many points did |c00ffff00%s|r spend on %s",
 		button1 = "OK",
 		button2 = "Cancel",
-		OnAccept = function()
-			points = getglobal(this:GetParent():GetName().."EditBox"):GetText();
+		OnAccept = function(self)
+			points = self.editBox:GetText()
 			GRSSRecordItemPointsOnly(points);
 		end,
-		EditBoxOnEnterPressed = function()
-			points = getglobal(this:GetParent():GetName().."EditBox"):GetText();
-			GRSSRecordItemPointsOnly(points);
-			this:GetParent():Hide();
-		end,
-		OnShow = function()
+		OnShow = function(self)
 			GRSS_ItemBoxOpen = 1;	
-			getglobal(this:GetName().."EditBox"):SetText(GRSS_PopupPoints);
+			self.editBox:SetText(GRSS_PopupPoints);
 		end,	
-		OnHide = function()
+		OnHide = function(self)
 			if table.getn(GRSS_ItemQueue) > 0 then
 				GRSS_NextItemPopup();
 			else
@@ -247,64 +242,57 @@ function GuildRaidSnapShot_OnLoad()
 		whileDead = 1,
 		hideOnEscape = 1,
 		hasEditBox = 1,
+		enterClicksFirstButton = 1,
 	};
 	StaticPopupDialogs["GRSS_RAIDPOINTS"] = {
 		text = "How many points should be awarded for the attendees in the snapshot called |c00ffff00%s|r?.  Enter |c00ff0000zs|r if you want to award points based on the following loot (items awarded for the next 10 minutes)",
 		button1 = "OK",
 		button2 = "Cancel",
-		OnAccept = function()
-			points = getglobal(this:GetParent():GetName().."EditBox"):GetText();
+		OnAccept = function(self)
+			points = self.editBox:GetText()
 			GRSSSetSnapshotPoints(points);
 		end,
-		EditBoxOnEnterPressed = function()
-			points = getglobal(this:GetParent():GetName().."EditBox"):GetText();
-			GRSSSetSnapshotPoints(points);
-			this:GetParent():Hide();
-		end,
-		OnShow = function()
+		OnShow = function(self)
 			GRSS_SnapshotBoxOpen = 1;	
-			getglobal(this:GetName().."EditBox"):SetText(GRSS_LastSnapShotPoints);
+			self.editBox:SetText(GRSS_LastSnapShotPoints);
 		end,	
-		OnHide = function()
+		OnHide = function(self)
 		end,
 		timeout = 0,
 		whileDead = 1,
 		hideOnEscape = 1,
 		hasEditBox = 1,
+		enterClicksFirstButton = 1,
 	};
 	StaticPopupDialogs["GRSS_WAITINGLIST"] = {
 		text = "Name of person(s) to add to waiting list? If adding more than one, seperate by a space",
 		button1 = "OK",
 		button2 = "Cancel",
-		OnAccept = function()
-			name = getglobal(this:GetParent():GetName().."EditBox"):GetText();
+		OnAccept = function(self)
+			name = self.editBox:GetText();
 			GRSS_AddNameToWaitingList(name);
 			
-		end,
-		EditBoxOnEnterPressed = function()
-			name = getglobal(this:GetParent():GetName().."EditBox"):GetText();
-			GRSS_AddNameToWaitingList(name);
-			this:GetParent():Hide();
-		end,
-		OnShow = function()
-			getglobal(this:GetName().."EditBox"):SetText("");
+		end,	
+		OnShow = function(self)
+			self.editBox:SetText("")
 		end,
 		timeout = 0,
 		whileDead = 1,
 		hideOnEscape = 1,
 		hasEditBox = 1,
+		enterClicksFirstButton = 1,
 	};
 	StaticPopupDialogs["GRSS_RAIDCHECK"] = {
 		text = "There are %s recorded right now.  Would you like to keep this data (and apply any expenditures to the current standings) or would you like to purge all the data.  You should ONLY purge if you've already uploaded your snapshots.",
 		button1 = "Purge",
 		button2 = "Keep",
-		OnAccept = function()
+		OnAccept = function(self)
 			GuildRaidSnapShot_SnapShots = {};
 			GuildRaidSnapShot_Loot = {};
 			GuildRaidSnapShot_Adj = {};
 			GRSSPrint("Snapshots Purged");	
 		end,
-		OnCancel = function()
+		OnCancel = function(self)
 			GRSS_RecalcSpentLoot();
 		end,
 		timeout = 0,
@@ -316,7 +304,7 @@ function GuildRaidSnapShot_OnLoad()
 		text = "The timer is currently running to take snapshots.  The next snapshot is set to be taken in |c00ffff00%s minutes|r.  Continue the periodic snapshots, or Stop the Timer?",
 		button1 = "Continue",
 		button2 = "Stop Timer",
-		OnAccept = function()
+		OnAccept = function(self)
 			GRSS_ReadyForTimer = true;
 			local mins = GRSS_NextTime - GetTime();
 			if mins > 0 then
@@ -324,81 +312,70 @@ function GuildRaidSnapShot_OnLoad()
 				GRSSPrint("The next snapshot wlll be in "..mins.." minutes");
 			end
 		end,
-		OnCancel = function()
+		OnCancel = function(self)
 			GRSS_NextTime = nil;
 			GRSS_ReadyForTimer = true;
 			GRSSPrint("Snapshot Timer Stopped");
 		end,
-		timeout};
+		timeout
+	};
 
 	StaticPopupDialogs["GRSS_STARTTIMER"] = {
 		text = "How many minutes between snapshots?",
 		button1 = "OK",
 		button2 = "Cancel",
-		OnAccept = function()
-			mins = getglobal(this:GetParent():GetName().."EditBox"):GetText();
+		OnAccept = function(self)
+			mins = self.editBox:GetText();
 			if tonumber(mins) == nil then
 				GRSSPrint(mins.." isn't exactly a number, is it?");
 			else
 				GRSS_StartTimer(mins);
 			end
 		end,
-		EditBoxOnEnterPressed = function()
-			mins = getglobal(this:GetParent():GetName().."EditBox"):GetText();
-			if tonumber(mins) == nil then
-				GRSSPrint(mins.." isn't exactly a number, is it?");
-			else
-				GRSS_StartTimer(mins);
-			end
-			this:GetParent():Hide();
-		end,
-		OnShow = function()
-			getglobal(this:GetName().."EditBox"):SetText(GRSS_Period);
+		OnShow = function(self)
+			self.editBox:SetText(GRSS_Period);
 		end,
 		timeout = 0,
 		whileDead = 1,
 		hideOnEscape = 1,
 		hasEditBox = 1,
+		enterClicksFirstButton = 1,
 	};
 
 	StaticPopupDialogs["GRSS_WIPE"] = {
 		text = "Was this a wipe? If so, and if you want to take a snapshot, enter the name of the snapshot and click 'Record Wipe', otherwise, click Cancel",
 		button1 = "Record Wipe",
 		button2 = "Cancel",
-		OnAccept = function()
-			name = getglobal(this:GetParent():GetName().."EditBox"):GetText();
+		OnAccept = function(self)
+			name = self.editBox:GetText()
 			GRSS_TakeSnapShot(name);
 		end,
-		EditBoxOnEnterPressed = function()
-			name = getglobal(this:GetParent():GetName().."EditBox"):GetText();
-			GRSS_TakeSnapShot(name);
-			this:GetParent():Hide();
-		end,
-		OnShow = function()
-			getglobal(this:GetName().."EditBox"):SetText("Wipe on "..GRSS_WipeCauser);
+		OnShow = function(self)
+			self.editBox:SetText("Wipe on "..GRSS_WipeCauser);
 		end,
 		timeout = 0,
 		whileDead = 1,
 		hideOnEscape = 1,
 		hasEditBox = 1,
+		enterClicksFirstButton = 1,
 	};
 
 	StaticPopupDialogs["GRSS_AUTOWAITLIST"] = {
 		text = "|c00ffff00%s|r is requesting to be added to the Wait List.  Accept or Deny?",
 		button1 = "Accept",
 		button2 = "Deny",
-		OnAccept = function()
+		OnAccept = function(self)
 			local last = table.getn(GRSS_WaitListRequest);
 			local name = GRSS_WaitListRequest[last];
 			GRSS_AddNameToWaitingList(name);
 			GRSS_SendWhisper("You've been added to the waiting list","WHISPER",nil,name);
 		end,
-		OnCancel = function()
+		OnCancel = function(self)
 			local last = table.getn(GRSS_WaitListRequest);
 			local name = GRSS_WaitListRequest[last];
 			GRSS_SendWhisper("Your request to be added to the waiting list has been denied","WHISPER",nil,name);
 		end,
-		OnHide = function()
+		OnHide = function(self)
 			table.remove(GRSS_WaitListRequest);
 			if table.getn(GRSS_WaitListRequest) > 0 then
 				GRSS_NextWaitListRequest();
@@ -406,7 +383,7 @@ function GuildRaidSnapShot_OnLoad()
 				GRSS_WaitListRequestBoxOpen = 0;
 			end
 		end,
-		onShow = function()
+		onShow = function(self)
 			GRSS_WaitListRequestBoxOpen = 1;
 		end,
 		timeout = 0,
@@ -1124,7 +1101,8 @@ function nn(v)
 	end
 end
 
-function GuildRaidSnapShot_OnEvent(event,arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9)
+function GuildRaidSnapShot_OnEvent(this,event,...)
+	local arg1, arg2, arg3 = ...;
 	if(event == "CHAT_MSG_MONSTER_YELL" --[[or event == "CHAT_MSG_YELL"--]]) then
 		if GRSS_Auto==1 and GRSS_Yells[arg2] ~= nil then
 			if string.find(arg1,GRSS_Yells[arg2]) ~= nil then
@@ -1725,7 +1703,7 @@ function GuildRaidSnapShot_SlashHandler(msg)
 end
 
 function GRSS_CaptureLoot(msg)
-	if GetNumRaidMembers()>0 or GetNumPartyMembers()>0 then
+	if GetNumRaidMembers()>0 or GetNumPartyMembers()>0 or true then
 		local s, e, player, link = string.find(msg, "([^%s]+) receives loot: (.+)%.");
 		if(player == nil) then
 			s, e, link = string.find(msg, "You receive loot: (.+)%.");
@@ -1998,7 +1976,7 @@ function GRSS_GuildTable()
 	return members;
 end
 
-function GRSSSystemDropDown_OnLoad()
+function GRSSSystemDropDown_OnLoad(this)
 	GRSS_Initialize_Data();
 	GRSSChangeSystem(GRSSCurrentSystem);
 	UIDropDownMenu_Initialize(this, GRSSSystemDropDown_Initialize);
@@ -2010,7 +1988,7 @@ function GRSSSystemDropDown_OnLoad()
 	UIDropDownMenu_SetWidth(GRSSSystemDropDown,130);
 end
 
-function GRSSLootSystemDropDown_OnLoad()
+function GRSSLootSystemDropDown_OnLoad(this)
 	--GRSS_Initialize_Data();
 	UIDropDownMenu_Initialize(this, GRSSLootSystemDropDown_Initialize);
 	if GRSS_Systems[GRSSCurrentSystem]~=nil then
@@ -2021,7 +1999,7 @@ function GRSSLootSystemDropDown_OnLoad()
 	UIDropDownMenu_SetWidth(GRSSLootSystemDropDown,130);
 end
 
-function GRSSAdjSystemDropDown_OnLoad()
+function GRSSAdjSystemDropDown_OnLoad(this)
 	--GRSS_Initialize_Data();
 	UIDropDownMenu_Initialize(this, GRSSAdjSystemDropDown_Initialize);
 	if GRSS_Systems[GRSSCurrentSystem]~=nil then
@@ -2033,13 +2011,13 @@ function GRSSAdjSystemDropDown_OnLoad()
 end
 
 
-function GRSSActionDropDown_OnLoad()
+function GRSSActionDropDown_OnLoad(this)
 	UIDropDownMenu_Initialize(this, GRSSActionDropDown_Initialize);
 	UIDropDownMenu_SetText(GRSSActionDropDown,"DKP Standings");
 	UIDropDownMenu_SetWidth(GRSSActionDropDown,110);
 end
 
-function GRSSBidStyleDropDown_OnLoad()
+function GRSSBidStyleDropDown_OnLoad(this)
 	UIDropDownMenu_Initialize(this, GRSSBidStyleDropDown_Initialize);
 	if GRSS_BidStyle == "" then
 		UIDropDownMenu_SetText(GRSSBidStyleDropDown,"Bidding Style");	
@@ -2063,18 +2041,18 @@ function GRSSBidStyleDropDown_Initialize()
 	end
 end
 
-function GRSS_ChangeBidStyle()
+function GRSS_ChangeBidStyle(this)
 	UIDropDownMenu_SetText(GRSSBidStyleDropDown,this.value);
 	GRSS_BidStyle = this.value;
 end
 
-function GRSSSpamDropDown_OnLoad()
+function GRSSSpamDropDown_OnLoad(this)
 	UIDropDownMenu_Initialize(this, GRSSSpamDropDown_Initialize);
 	UIDropDownMenu_SetText(GRSSSpamDropDown,"Spam Chat");	
 	UIDropDownMenu_SetWidth(GRSSSpamDropDown,110);
 end
 
-function GRSSAdjTypeDropDown_OnLoad()
+function GRSSAdjTypeDropDown_OnLoad(this)
 	UIDropDownMenu_Initialize(this, GRSSAdjTypeDropDown_Initialize);
 	UIDropDownMenu_SetText(GRSSAdjTypeDropDown,"EP(Earned)");	
 	UIDropDownMenu_SetWidth(GRSSAdjTypeDropDown,90);
@@ -2120,12 +2098,12 @@ function GRSS_GetAdjType()
 	return adjtype;
 end
 
-function GRSS_SetAdjType()
+function GRSS_SetAdjType(this)
 	UIDropDownMenu_SetText(GRSSAdjTypeDropDown,this.value);
 	local s,e,adjtype = string.find(this.value,"^(%w+)%(");
 end
 
-function GRSS_ChangeSpam()
+function GRSS_ChangeSpam(this)
 	local place = this.value;
 	SendChatMessage("The following are for the DKP System: "..GRSSCurrentSystem,place);
 	if table.getn(GRSS_DKP) > 40 then
@@ -2141,7 +2119,7 @@ function GRSS_ChangeSpam()
 end
 
 
-function GRSSRaidFilterDropDown_OnLoad()
+function GRSSRaidFilterDropDown_OnLoad(this)
 	UIDropDownMenu_Initialize(this, GRSSRaidFilterDropDown_Initialize);
 	if GRSS_Spam == "" then
 		UIDropDownMenu_SetText(GRSSRaidFilterDropDown,"All");	
@@ -2165,13 +2143,13 @@ function GRSSRaidFilterDropDown_Initialize()
 	end
 end
 
-function GRSS_ChangeRaidFilter()
+function GRSS_ChangeRaidFilter(this)
 	UIDropDownMenu_SetText(GRSSRaidFilterDropDown,this.value);
 	GRSS_RaidFilter = this.value;
 	GRSSChangeSystem(GRSSCurrentSystem);
 end
 
-function GRSSClassFilterDropDown_OnLoad()
+function GRSSClassFilterDropDown_OnLoad(this)
 	UIDropDownMenu_Initialize(this, GRSSClassFilterDropDown_Initialize);
 	if GRSS_BidStyle == "" then
 		UIDropDownMenu_SetText(GRSSClassFilterDropDown,"All");	
@@ -2196,13 +2174,13 @@ function GRSSClassFilterDropDown_Initialize()
 end
 
 
-function GRSS_ChangeClassFilter()
+function GRSS_ChangeClassFilter(this)
 	UIDropDownMenu_SetText(GRSSClassFilterDropDown,this.value);
 	GRSS_ClassFilter = this.value;
 	GRSSChangeSystem(GRSSCurrentSystem);
 end
 
-function GRSSRollNumberDropDown_OnLoad()
+function GRSSRollNumberDropDown_OnLoad(this)
 	
 	UIDropDownMenu_Initialize(this, GRSSRollNumberDropDown_Initialize);
 	UIDropDownMenu_SetText(GRSSRollNumberDropDown,"1-"..GRSSNumNilZero(GRSS_RollNumber));
@@ -2223,27 +2201,27 @@ function GRSSRollNumberDropDown_Initialize()
 	end
 end
 
-function GRSS_ChangeRollNumber()
+function GRSS_ChangeRollNumber(this)
 	UIDropDownMenu_SetText(GRSSRollNumberDropDown,this.value);
 	local s,e,num = string.find(this.value,"1%-(%d+)")
 	GRSS_RollNumber = num;
 end
 
 
-function GRSSSystemDropDown_OnClick()
+function GRSSSystemDropDown_OnClick(this)
 	GRSSCurrentSystem = this.value;
 	UIDropDownMenu_SetText(GRSSSystemDropDown,this.value);
 	this.isChecked=true;
 	GRSSChangeSystem(GRSSCurrentSystem);
 end
 
-function GRSSLootSystemDropDown_OnClick()
+function GRSSLootSystemDropDown_OnClick(this)
 	GRSSLootCurrentSystem = this.value;
 	UIDropDownMenu_SetText(GRSSLootSystemDropDown,this.value);
 	this.isChecked=true;
 end
 
-function GRSSAdjSystemDropDown_OnClick()
+function GRSSAdjSystemDropDown_OnClick(this)
 	UIDropDownMenu_SetText(GRSSAdjSystemDropDown,this.value);
 	GRSSAdjShowHideType()
 	this.isChecked=true;
@@ -2441,7 +2419,7 @@ function GRSS_ClearRolls()
 end
 
 
-function GRSS_DoAction()
+function GRSS_DoAction(this)
 	GRSSCurrentAction = this.value;
 	UIDropDownMenu_SetText(GRSSActionDropDown,this.value);
 
@@ -2536,7 +2514,7 @@ function GRSSAdjSystemDropDown_Initialize()
 	end
 end
 
-function GRSSLootDropDown_OnLoad()
+function GRSSLootDropDown_OnLoad(this)
 	UIDropDownMenu_Initialize(this, GRSSLootDropDown_Initialize);
 end
 
@@ -2559,7 +2537,7 @@ function GRSSLootDropDown_OnClick()
 	ToggleDropDownMenu(1, nil, GRSSLootDropDown, "GRSSItemName", 0, 0);
 end
 
-function GRSSLootDropDownSelect()
+function GRSSLootDropDownSelect(this)
 	GRSSItemName:SetText(this.value);
 end
 
@@ -2587,7 +2565,7 @@ end
 -- Begin the Waiting List/Invite Code
 
 
-function GRSSInviteDropDown_OnLoad()
+function GRSSInviteDropDown_OnLoad(this)
 	UIDropDownMenu_Initialize(this, GRSSInviteDropDown_Initialize);
 	UIDropDownMenu_SetText(GRSSInviteDropDown,"Waiting List");
 	UIDropDownMenu_SetWidth(GRSSInviteDropDown,110);
@@ -2607,7 +2585,7 @@ function GRSSInviteDropDown_Initialize()
 	end
 end
 
-function GRSS_ChangeInvite()
+function GRSS_ChangeInvite(this)
 	UIDropDownMenu_SetText(GRSSInviteDropDown,this.value);
 	GRSS_InviteType = this.value;
 	if GRSS_InviteType == "Waiting List" then
