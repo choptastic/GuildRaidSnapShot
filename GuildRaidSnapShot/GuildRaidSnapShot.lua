@@ -1869,7 +1869,7 @@ function GRSS_RaidCommaList()
 				GRSSPrint("You're currently in combat, so I can't open the raid window for this snapshot");
 			else
 				ToggleFriendsFrame(1);
-				ToggleFriendsFrame(5);
+				ToggleFriendsFrame(4);
 			end
 		end
 	else
