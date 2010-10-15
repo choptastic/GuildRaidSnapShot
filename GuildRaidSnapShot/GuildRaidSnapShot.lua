@@ -1142,7 +1142,6 @@ function GuildRaidSnapShot_OnEvent(this,event,...)
 	elseif(event=="PLAYER_DEAD" or event=="CHAT_MSG_COMBAT_FRIENDLY_DEATH") then
 		GRSS_WipeCheck();
 	elseif(event=="COMBAT_LOG_EVENT_UNFILTERED") then
-		GRSSPrint(arg2);
 		if(arg2=="PARTY_KILL" or arg2=="UNIT_DIED") then
 			if not IsActiveBattlefieldArena() then
 				if GRSS_FastBossLookup[arg7] ~= nil and GRSS_Auto == 1 then
