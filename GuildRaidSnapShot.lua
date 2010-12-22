@@ -8,7 +8,7 @@ GRSS_MainOnly = {};
 GRSS_Divide = {};
 GRSS_Systems = {};
 GRSS_Full_DKP = {};
-GRSS_Bosses = {"Lucifron","Magmadar","Gehennas","Garr","Baron Geddon","Shazzrah","Sulfuron Harbinger","Golemagg the Incinerator","Ragnaros","Doom Lord Kazzak","Azuregos","Lethon","Emeriss","Onyxia","Taerar","Ysondre","Razorgore the Untamed","Vaelastrasz the Corrupt","Flamegor","Ebonroc","Firemaw","Chromaggus","Broodlord Lashlayer","Nefarian","Prophet Skeram","Lord Kri","Battleguard Sartura","Princess Huhuran","Fankriss the Unyielding","Viscidus","Ouro","C'Thun","Emperor Vek'nilash","Emperor Vek'lor","Anub'Rekhan","Grand Widow Faerlina","Maexxna","Feugen","Gluth","Gothik the Harvester","Grobbulus","Heigan the Unclean","Highlord Mograine","Instructor Razuvious","Lady Blaumeux","Loatheb","Noth the Plaguebringer","Patchwerk","Sapphiron","Sir Zeliek","Stalagg","Thaddius","Thane Korth'azz","Ossirian the Unscarred","Moam","Kurinnaxx","General Rajaxx","Buru the Gorger","Ayamiss the Hunter","Bloodlord Mandokir","Gahz'ranka","Gri'lek","Hakkar","Hazza'rah","High Priest Thekal","High Priest Venoxis","High Priestess Arlokk","High Priestess Jeklik","High Priestess Mar'li","Jin'do the Hexxer","Renataki","Wushoolay","The Crone","Hyakiss the Lurker","Julianne","Maiden of Virtue","Moroes","Netherspite","Nightbane","Prince Malchezaar","Rokad the Ravager","Romulo","Shade of Aran","Shadikith the Glider","Terestian Illhoof","The Big Bad Wolf","The Curator","Gruul the Dragonkiller","Magtheridon","High King Maulgar","Fathom-Lord Karathress","Hydross the Unstable","Lady Vashj","Leotheras the Blind","Morogrim Tidewalker","The Lurker Below","Al'ar","High Astromancer Solarian","Kael'thas Sunstrider","Void Reaver","Doomwalker","Attumen the Huntsman","Illidan Stormrage","Gathios the Shatterer","High Nethermancer Zerevor","Lady Malande","Veras Darkshadow","Essence of Anger","Gurtogg Bloodboil","Illidari Council","Teron Gorefiend","High Warlord Naj'entus","Mother Shahraz","Shade of Akama","Supremus","Anetheron","Archimonde","Azgalor","Kaz'rogal","Rage Winterchill","Nalorakk","Akil'zon","Jan'alai","Halazzi","Hex Lord Malacrass","Zul'jin","Kalecgos","Sathrovarr the Corruptor","Brutallus","Felmyst","Lady Sacrolash","Grand Warlock Alythess","M'uru","Entropius","Kil'jaeden","Kel'Thuzad","Sartharion","Archavon the Stone Watcher","Malygos","Flame Leviathan","Razorscale","XT-002 Deconstructor","Ignis the Furnace Master","Assembly of Iron","Kologarn","Auriaya","Mimiron","Hodir","Thorim","Freva","General Vezax","Yogg-Saron","Algalon the Observer","Emalon the Storm Watcher","Icehowl","Lord Jaraxxus","Fjola Lightbane","Anub'arak","Koralon the Flame Watcher","Lord Marrowgar","Lady Deathwhisper","Deathbringer Saurfang","Festergut","Rotface","Professor Putricide","Blood-Queen Lana'thal","Valithria Dreamwalker","Sindragosa","The Lich King","Prince Keleseth"
+GRSS_Bosses = {"Lucifron","Magmadar","Gehennas","Garr","Baron Geddon","Shazzrah","Sulfuron Harbinger","Golemagg the Incinerator","Ragnaros","Doom Lord Kazzak","Azuregos","Lethon","Emeriss","Onyxia","Taerar","Ysondre","Razorgore the Untamed","Vaelastrasz the Corrupt","Flamegor","Ebonroc","Firemaw","Chromaggus","Broodlord Lashlayer","Nefarian","Prophet Skeram","Lord Kri","Battleguard Sartura","Princess Huhuran","Fankriss the Unyielding","Viscidus","Ouro","C'Thun","Emperor Vek'nilash","Emperor Vek'lor","Anub'Rekhan","Grand Widow Faerlina","Maexxna","Feugen","Gluth","Gothik the Harvester","Grobbulus","Heigan the Unclean","Highlord Mograine","Instructor Razuvious","Lady Blaumeux","Loatheb","Noth the Plaguebringer","Patchwerk","Sapphiron","Sir Zeliek","Stalagg","Thaddius","Thane Korth'azz","Ossirian the Unscarred","Moam","Kurinnaxx","General Rajaxx","Buru the Gorger","Ayamiss the Hunter","Bloodlord Mandokir","Gahz'ranka","Gri'lek","Hakkar","Hazza'rah","High Priest Thekal","High Priest Venoxis","High Priestess Arlokk","High Priestess Jeklik","High Priestess Mar'li","Jin'do the Hexxer","Renataki","Wushoolay","The Crone","Hyakiss the Lurker","Julianne","Maiden of Virtue","Moroes","Netherspite","Nightbane","Prince Malchezaar","Rokad the Ravager","Romulo","Shade of Aran","Shadikith the Glider","Terestian Illhoof","The Big Bad Wolf","The Curator","Gruul the Dragonkiller","Magtheridon","High King Maulgar","Fathom-Lord Karathress","Hydross the Unstable","Lady Vashj","Leotheras the Blind","Morogrim Tidewalker","The Lurker Below","Al'ar","High Astromancer Solarian","Kael'thas Sunstrider","Void Reaver","Doomwalker","Attumen the Huntsman","Illidan Stormrage","Gathios the Shatterer","High Nethermancer Zerevor","Lady Malande","Veras Darkshadow","Essence of Anger","Gurtogg Bloodboil","Illidari Council","Teron Gorefiend","High Warlord Naj'entus","Mother Shahraz","Shade of Akama","Supremus","Anetheron","Archimonde","Azgalor","Kaz'rogal","Rage Winterchill","Nalorakk","Akil'zon","Jan'alai","Halazzi","Hex Lord Malacrass","Zul'jin","Kalecgos","Sathrovarr the Corruptor","Brutallus","Felmyst","Lady Sacrolash","Grand Warlock Alythess","M'uru","Entropius","Kil'jaeden","Kel'Thuzad","Sartharion","Archavon the Stone Watcher","Malygos","Flame Leviathan","Razorscale","XT-002 Deconstructor","Ignis the Furnace Master","Assembly of Iron","Kologarn","Auriaya","Mimiron","Hodir","Thorim","Freva","General Vezax","Yogg-Saron","Algalon the Observer","Emalon the Storm Watcher","Icehowl","Lord Jaraxxus","Fjola Lightbane","Anub'arak","Koralon the Flame Watcher","Lord Marrowgar","Lady Deathwhisper","Deathbringer Saurfang","Festergut","Rotface","Professor Putricide","Blood-Queen Lana'thal","Valithria Dreamwalker","Sindragosa","The Lich King","Prince Keleseth","Argaloth","Halfus Wyrmbreaker","Theralion","Cho'gall","Magmaw","Omnitron Defense System","Maloriak","Atramedes","Chimaeron","Nefarian","Conclave of the Wind","Al'Akir","Sinestra"
 
 --[[uncomment for testing the mobs outside shattrath
 ,"Dreadfang Lurker","Timber Worg","Ironspine Petrifier"
@@ -30,6 +30,7 @@ GRSS_Yells["King Varian Wrynn"] = "GLORY TO THE ALLIANCE!";
 GRSS_Yells["High Overlord Saurfang"] = "The Alliance falter. Onward to the Lich King!";
 GRSS_Yells["Muradin Bronzebeard"] = "Don't say I didn't warn ya, scoundrels! Onward, brothers and sisters!";
 GRSS_Yells["Valithria Dreamwalker"] = "I am renewed!.+to rest!";
+GRSS_Yells["Elementium Monstrosity"] = "IMPOSSIBLE";
 --GRSS_Yells["Chops"] = "this is a test";
 
 GRSS_Yell_Redirect = {};
@@ -37,6 +38,7 @@ GRSS_Yell_Redirect["Garrosh Hellscream"] = "Faction Champions";
 GRSS_Yell_Redirect["King Varian Wrynn"] = "Faction Champions";
 GRSS_Yell_Redirect["High Overlord Saurfang"] = "Gunship Battle";
 GRSS_Yell_Redirect["Muradin Bronzebeard"] = "Gunship Battle";
+GRSS_Yell_Redirect["Elementium Monstrosity"] = "Twilight Ascendants";
 --GRSS_Yell_Redirect["Chops"] = "Faction Champions Test";
 
 GRSS_BossEmote = {};
@@ -85,6 +87,7 @@ GRSS_LootPromptInCombat = 0;
 GRSS_LastSnapShotName = "";
 GRSS_Redistribute_SnapShot = "";
 GRSS_Redistribute_SnapShot_ExpireTime = 0;
+GRSS_DoingParty = 1;
 
 GRSS_NextTime = nil;
 GRSS_Period = 60;
@@ -113,7 +116,7 @@ GRSSHelpMsg = {
 	"!waitlistwho = Show a list of who's on the waiting list",
 };
 
-local GRSSVersion = "2.020";
+local GRSSVersion = "2.021";
 local GRSSUsage = {
 	"Type |c00ffff00/grss <snapshotname>|r to take a snapshot (ex: |c00ffff00/grss Kel'Thuzad|r)",
 	"|c00ffff00/grss loot|r to open a loot prompt to manually record an item being received",
@@ -1644,31 +1647,31 @@ function GuildRaidSnapShot_SlashHandler(msg)
 		GuildRaidSnapShot_SnapShots = {};
 		GuildRaidSnapShot_Loot = {};
 		GuildRaidSnapShot_Adj = {};
-		GRSSPrint("Snapshots Purged");
+		GRSSPrint(GRSSRed("Snapshots Purged"));
 	elseif msglower == "noauto" then
 		GRSS_Auto = 0;
-		GRSSPrint("Auto Snapshots Disabled");
+		GRSSModePrint("Auto Snapshots",false);
 	elseif msglower == "yesauto" then
 		GRSS_Auto = 1;
-		GRSSPrint("Auto Snapshots Enabled");
+		GRSSModePrint("Auto Snapshots",true);
 	elseif msglower == "yesloot" then
 		GRSS_LootCap = 1;
-		GRSSPrint("Looting will now result in popups prompting for points");
+		GRSSModePrint("Loot point prompts",true);
 	elseif msglower == "noloot" then
 		GRSS_LootCap = 0;
-		GRSSPrint("Looting will no longer result in popups prompting for points");
+		GRSSModePrint("Loot point prompts",false);
 	elseif msglower == "yessnapshotpopup" or msglower == "yessnapshotpopups" or  msglower == "yessnapshotpoints"  then
 		GRSS_RaidPointsPopup = 1;
-		GRSSPrint("Raid snapshots will now now prompt for points");
+		GRSSModePrint("Raid Snapshot Point Prompts",true);
 	elseif msglower == "nosnapshotpopup" or msglower == "nosnapshotpopups" or msglower == "nosnapshotpoints" then
-		GRSSPrint("Raid snapshots will no longer result in popups prompting for points");
 		GRSS_RaidPointsPopup = 0;
+		GRSSModePrint("Raid Snapshot Point Prompts",false);
 	elseif msglower == "yeslootcombat" then
 		GRSS_LootPromptInCombat = 1;
-		GRSSPrint("Loot prompts will now pop up immediately");
+		GRSSModePrint("Loot Prompts In Combat",true);
 	elseif msglower == "nolootcombat" then
 		GRSS_LootPromptInCombat = 0;
-		GRSSPrint("Loot prompts will now wait to pop once you're out of combat");
+		GRSSModePrint("Loot Prompts In Combat",false);
 	elseif msglower == "show" then
 		GRSS:Show();
 		GRSS_CompareVersions();
@@ -1684,22 +1687,67 @@ function GuildRaidSnapShot_SlashHandler(msg)
 	elseif msglower == "stoptimer" then
 		GRSS_StopTimer();
 	elseif msglower == "yesscreenshot" then
-		GRSSPrint("Screenshots of the raid will be taken when snapshots are initiated");
+		GRSSModePrint("Screenshots with snapshots",true);
 		GRSS_TakeScreenshots = 1
 	elseif msglower == "noscreenshot" then
 		GRSS_TakeScreenshots = nil
-		GRSSPrint("Screenshots of the raid will no longer be taken when snapshots are initiated");
+		GRSSModePrint("Screenshots with snapshots",false);
 	elseif msglower == "yeswipe" then
 		GRSS_AutoWipe = 1;
-		GRSSPrint("Wipe Detection enabled");
+		GRSSModePrint("Wipe Detection",true);
 	elseif msglower == "nowipe" then
 		GRSS_AutoWipe = 0;
-		GRSSPrint("Wipe Detection disabled");
-	elseif GetNumRaidMembers() > 0 or GetNumPartyMembers() > 0 then
+		GRSSModePrint("Wipe Detection",false);
+	elseif msglower == "noparty" then
+		GRSS_DoingParty = 0;
+		GRSSModePrint("Party mode",false);
+	elseif msglower == "yesparty" then
+		GRSS_DoingParty = 1;
+		GRSSModePrint("Party mode",true);
+	elseif GetNumRaidMembers() > 0 or (GRSS_DoingParty == 1 and GetNumPartyMembers() > 0) then
 		GRSS_TakeSnapShot(msg);
 	else
 		GRSSPrint("You're not in a raid");
 	end
+end
+
+function GRSSOn()
+	return GRSSGreen("On");
+end
+
+function GRSSOff()
+	return GRSSRed("Off");
+end
+
+function GRSSModePrint(ModeText,tf)
+	local On;
+	if tf==true then
+		On = GRSSOn();
+	else
+		On = GRSSOff();
+	end
+	GRSSPrint(GRSSYellow(ModeText)..": "..On);
+end
+
+
+function GRSSColor(msg,color)
+	return "|c00"..color..msg.."|r";
+end
+
+function GRSSRed(msg)
+	return GRSSColor(msg,"ff0000");
+end
+
+function GRSSGreen(msg)
+	return GRSSColor(msg,"00ff00");
+end
+
+function GRSSBlue(msg)
+	return GRSSColor(msg,"0000ff");
+end
+
+function GRSSYellow(msg)
+	return GRSSColor(msg,"ffff00");
 end
 
 function GRSS_CaptureLoot(msg)
