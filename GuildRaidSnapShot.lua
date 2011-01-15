@@ -1527,7 +1527,7 @@ function GRSSFindPlayerSystemIndex(playername,sys)
 	end
 	for i,v in pairs(GRSS_Full_DKP[sys]) do
 		if(string.lower(v.name)==playername) then
-			return i;	
+			return i;
 		end
 	end
 	return -1;
@@ -1573,10 +1573,18 @@ function GRSSAddPoints(playername,sys,pointtype,points)
 		temp.rankid = 0;
 		table.insert(GRSS_Full_DKP[sys],temp);
 		i = GRSSFindPlayerSystemIndex(playername,sys);
+		GRSSPrint("inswerting"..playername.."into"..sys);
 	end
-	GRSS_Full_DKP[sys][i][pointtype] = GRSSNumNilZero(GRSS_Full_DKP[sys][i][pointtype]) + GRSSNumNilZero(points);
-	if GRSSCurrentSystem == sys then
-		GRSSChangeSystem(sys);
+	
+
+	GRSSPrint("Intex:"..i);
+	if GRSS_Full_DKP[sys][i] == nil then
+		GRSSPrint("is null, some bug");
+	else
+		GRSS_Full_DKP[sys][i][pointtype] = GRSSNumNilZero(GRSS_Full_DKP[sys][i][pointtype]) + GRSSNumNilZero(points);
+		if GRSSCurrentSystem == sys then
+			GRSSChangeSystem(sys);
+		end
 	end
 end
 
