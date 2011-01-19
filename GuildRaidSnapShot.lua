@@ -8,7 +8,9 @@ GRSS_MainOnly = {};
 GRSS_Divide = {};
 GRSS_Systems = {};
 GRSS_Full_DKP = {};
-GRSS_Bosses = {"Lucifron","Magmadar","Gehennas","Garr","Baron Geddon","Shazzrah","Sulfuron Harbinger","Golemagg the Incinerator","Ragnaros","Doom Lord Kazzak","Azuregos","Lethon","Emeriss","Onyxia","Taerar","Ysondre","Razorgore the Untamed","Vaelastrasz the Corrupt","Flamegor","Ebonroc","Firemaw","Chromaggus","Broodlord Lashlayer","Nefarian","Prophet Skeram","Lord Kri","Battleguard Sartura","Princess Huhuran","Fankriss the Unyielding","Viscidus","Ouro","C'Thun","Emperor Vek'nilash","Emperor Vek'lor","Anub'Rekhan","Grand Widow Faerlina","Maexxna","Feugen","Gluth","Gothik the Harvester","Grobbulus","Heigan the Unclean","Highlord Mograine","Instructor Razuvious","Lady Blaumeux","Loatheb","Noth the Plaguebringer","Patchwerk","Sapphiron","Sir Zeliek","Stalagg","Thaddius","Thane Korth'azz","Ossirian the Unscarred","Moam","Kurinnaxx","General Rajaxx","Buru the Gorger","Ayamiss the Hunter","Bloodlord Mandokir","Gahz'ranka","Gri'lek","Hakkar","Hazza'rah","High Priest Thekal","High Priest Venoxis","High Priestess Arlokk","High Priestess Jeklik","High Priestess Mar'li","Jin'do the Hexxer","Renataki","Wushoolay","The Crone","Hyakiss the Lurker","Julianne","Maiden of Virtue","Moroes","Netherspite","Nightbane","Prince Malchezaar","Rokad the Ravager","Romulo","Shade of Aran","Shadikith the Glider","Terestian Illhoof","The Big Bad Wolf","The Curator","Gruul the Dragonkiller","Magtheridon","High King Maulgar","Fathom-Lord Karathress","Hydross the Unstable","Lady Vashj","Leotheras the Blind","Morogrim Tidewalker","The Lurker Below","Al'ar","High Astromancer Solarian","Kael'thas Sunstrider","Void Reaver","Doomwalker","Attumen the Huntsman","Illidan Stormrage","Gathios the Shatterer","High Nethermancer Zerevor","Lady Malande","Veras Darkshadow","Essence of Anger","Gurtogg Bloodboil","Illidari Council","Teron Gorefiend","High Warlord Naj'entus","Mother Shahraz","Shade of Akama","Supremus","Anetheron","Archimonde","Azgalor","Kaz'rogal","Rage Winterchill","Nalorakk","Akil'zon","Jan'alai","Halazzi","Hex Lord Malacrass","Zul'jin","Kalecgos","Sathrovarr the Corruptor","Brutallus","Felmyst","Lady Sacrolash","Grand Warlock Alythess","M'uru","Entropius","Kil'jaeden","Kel'Thuzad","Sartharion","Archavon the Stone Watcher","Malygos","Flame Leviathan","Razorscale","XT-002 Deconstructor","Ignis the Furnace Master","Assembly of Iron","Kologarn","Auriaya","Mimiron","Hodir","Thorim","Freva","General Vezax","Yogg-Saron","Algalon the Observer","Emalon the Storm Watcher","Icehowl","Lord Jaraxxus","Fjola Lightbane","Anub'arak","Koralon the Flame Watcher","Lord Marrowgar","Lady Deathwhisper","Deathbringer Saurfang","Festergut","Rotface","Professor Putricide","Blood-Queen Lana'thal","Valithria Dreamwalker","Sindragosa","The Lich King","Prince Keleseth","Argaloth","Halfus Wyrmbreaker","Theralion","Cho'gall","Magmaw","Omnitron Defense System","Maloriak","Atramedes","Chimaeron","Nefarian","Conclave of the Wind","Al'Akir","Sinestra"
+GRSS_Bosses_Old = {"Lucifron","Magmadar","Gehennas","Garr","Baron Geddon","Shazzrah","Sulfuron Harbinger","Golemagg the Incinerator","Ragnaros","Doom Lord Kazzak","Azuregos","Lethon","Emeriss","Onyxia","Taerar","Ysondre","Razorgore the Untamed","Vaelastrasz the Corrupt","Flamegor","Ebonroc","Firemaw","Chromaggus","Broodlord Lashlayer","Nefarian","Prophet Skeram","Lord Kri","Battleguard Sartura","Princess Huhuran","Fankriss the Unyielding","Viscidus","Ouro","C'Thun","Emperor Vek'nilash","Emperor Vek'lor","Anub'Rekhan","Grand Widow Faerlina","Maexxna","Feugen","Gluth","Gothik the Harvester","Grobbulus","Heigan the Unclean","Highlord Mograine","Instructor Razuvious","Lady Blaumeux","Loatheb","Noth the Plaguebringer","Patchwerk","Sapphiron","Sir Zeliek","Stalagg","Thaddius","Thane Korth'azz","Ossirian the Unscarred","Moam","Kurinnaxx","General Rajaxx","Buru the Gorger","Ayamiss the Hunter","Bloodlord Mandokir","Gahz'ranka","Gri'lek","Hakkar","Hazza'rah","High Priest Thekal","High Priest Venoxis","High Priestess Arlokk","High Priestess Jeklik","High Priestess Mar'li","Jin'do the Hexxer","Renataki","Wushoolay","The Crone","Hyakiss the Lurker","Julianne","Maiden of Virtue","Moroes","Netherspite","Nightbane","Prince Malchezaar","Rokad the Ravager","Romulo","Shade of Aran","Shadikith the Glider","Terestian Illhoof","The Big Bad Wolf","The Curator","Gruul the Dragonkiller","Magtheridon","High King Maulgar","Fathom-Lord Karathress","Hydross the Unstable","Lady Vashj","Leotheras the Blind","Morogrim Tidewalker","The Lurker Below","Al'ar","High Astromancer Solarian","Kael'thas Sunstrider","Void Reaver","Doomwalker","Attumen the Huntsman","Illidan Stormrage","Gathios the Shatterer","High Nethermancer Zerevor","Lady Malande","Veras Darkshadow","Essence of Anger","Gurtogg Bloodboil","Illidari Council","Teron Gorefiend","High Warlord Naj'entus","Mother Shahraz","Shade of Akama","Supremus","Anetheron","Archimonde","Azgalor","Kaz'rogal","Rage Winterchill","Nalorakk","Akil'zon","Jan'alai","Halazzi","Hex Lord Malacrass","Zul'jin","Kalecgos","Sathrovarr the Corruptor","Brutallus","Felmyst","Lady Sacrolash","Grand Warlock Alythess","M'uru","Entropius","Kil'jaeden","Kel'Thuzad","Sartharion","Archavon the Stone Watcher","Malygos","Flame Leviathan","Razorscale","XT-002 Deconstructor","Ignis the Furnace Master","Assembly of Iron","Kologarn","Auriaya","Mimiron","Hodir","Thorim","Freva","General Vezax","Yogg-Saron","Algalon the Observer","Emalon the Storm Watcher","Icehowl","Lord Jaraxxus","Fjola Lightbane","Anub'arak","Koralon the Flame Watcher","Lord Marrowgar","Lady Deathwhisper","Deathbringer Saurfang","Festergut","Rotface","Professor Putricide","Blood-Queen Lana'thal","Valithria Dreamwalker","Sindragosa","The Lich King","Prince Keleseth"};
+
+GRSS_Bosses = {"Argaloth","Halfus Wyrmbreaker","Theralion","Cho'gall","Magmaw","Omnitron Defense System","Maloriak","Atramedes","Chimaeron","Nefarian","Conclave of the Wind","Al'Akir","Sinestra"
 
 --[[uncomment for testing the mobs outside shattrath
 ,"Dreadfang Lurker","Timber Worg","Ironspine Petrifier"
@@ -19,6 +21,7 @@ GRSS_FastBossLookup = {};	--This gets initialized with the mod
 GRSS_Ignore = {"Onyxian","Onyxia's Elite Guard","Maexxna Spiderling","Patchwerk Golem","Hakkari","Son of Hakkar"," slain by ","Nightbane .+",".+the Crone","Netherspite Infernal","Ember of Al'ar","Sartharion Twilight Whelp","Sartharion Twilight Egg"};
 GRSS_Yells = {};
 GRSS_LootIgnore = {"Hakkari Bijou","Alabaster Idol","Amber Idol","Azure Idol","Jasper Idol","Lambent Idol","Obsidian Idol","Onyx Idol","Vermillion Idol","Lava Core","Fiery Core","Large .+ Shard","Small .+ Shard","Nexus Crystal","Wartorn .+ Scrap","Badge of Justice","Cosmic Infuser","^Devastation$","Infinity Blade","Phaseshift Bulwark","Warp Slicer","Staff of Disintegration","Netherstrand Longbow","Nether Spike","Bundle of Nether Spikes","Emblem of Heroism","Emblem of Valor","Abyss Crystal","Emblem of Conquest","Emblem of Triumph","Emblem of Frost"};
+
 GRSS_Yells["Majordomo Executus"] = "Impossible!.+I submit!";
 GRSS_Yells["Attumen the Huntsman"] = "Always knew.+the hunted";
 GRSS_Yells["Freya"] = "His hold on me dissipates";
@@ -64,6 +67,7 @@ GRSS_RaidFilter = "All";
 GRSS_ClassFilter = "All";
 GRSS_ItemQueue = {};
 GRSS_ItemBoxOpen = 0;
+GRSS_Old_Bosses_On = false;
 GRSS_WipeCauser = "Unknown";
 GRSS_LastWipeTime = 0;
 GRSS_LastSnapshot = 0;
@@ -116,7 +120,7 @@ GRSSHelpMsg = {
 	"!waitlistwho = Show a list of who's on the waiting list",
 };
 
-local GRSSVersion = "2.021";
+local GRSSVersion = "2.022";
 local GRSSUsage = {
 	"Type |c00ffff00/grss <snapshotname>|r to take a snapshot (ex: |c00ffff00/grss Kel'Thuzad|r)",
 	"|c00ffff00/grss loot|r to open a loot prompt to manually record an item being received",
@@ -138,6 +142,8 @@ local GRSSUsage = {
 	"|c00ffff00/grss nowipe|r to disable the snapshot prompt when a wipe occurs",
 	"|c00ffff00/grss yeslootcombat|r allows the loot prompt to pop up in combat",
 	"|c00ffff00/grss nolootcombat|r forces the loot prompt to wait until out of combat (recommended unless you're having problems)",
+	"|c00ffff00/grss yesold|r enables old bosses to trigger a snapshot",
+	"|c00ffff00/grss noold|r disables old bosses triggering a snapshot",
 	"==========================================",
 	"Members can also send you tells like the following for information (you can even send yourself a tell for this info, too)",
 	};
@@ -178,6 +184,28 @@ function GRSS_SetItemRef(link,text,button)
 	end
 end
 
+function GRSS_EnableOldBosses()
+	GRSS_Old_Bosses_On = true;
+	GRSS_FastBossLookup = {};
+	for i,v in pairs(GRSS_Bosses) do
+		GRSS_FastBossLookup[v] = v;
+	end
+
+	for i,v in pairs(GRSS_Bosses_Old) do
+		GRSS_FastBossLookup[v] = v;
+	end
+
+end
+
+function GRSS_DisableOldBosses()
+	GRSS_Old_Bosses_On = false;
+	GRSS_FastBossLookup = {};
+	for i,v in pairs(GRSS_Bosses) do
+		GRSS_FastBossLookup[v] = v;
+	end
+end
+
+
 function GuildRaidSnapShot_OnLoad(this)
 
 	--GRSSChangeSystem(0);
@@ -185,9 +213,15 @@ function GuildRaidSnapShot_OnLoad(this)
 	SLASH_GuildRaidSnapShot1 = "/grss";
 	SLASH_GuildRaidSnapShot1 = "/GRSS";
 
-	for i,v in pairs(GRSS_Bosses) do
-		GRSS_FastBossLookup[v] = v;
+	if GRSS_Old_Bosses_On == true then
+		GRSS_EnableOldBosses();
+	else
+		GRSS_DisableOldBosses();
 	end
+
+	--[[for i,v in pairs(GRSS_Bosses) do
+		GRSS_FastBossLookup[v] = v;
+	end--]]
 
 	this:RegisterEvent("PLAYER_REGEN_ENABLED");
 	this:RegisterEvent("PLAYER_REGEN_DISABLED");
@@ -1515,22 +1549,32 @@ function GRSS_ProcessWhisper(from,msg,lang)
 	end
 end
 
-function GRSSFindPlayerSystemIndex(playername,sys)
+function GRSSFindPlayerSystemIndex_NoAltCheck(playername,sys)
 	playername = string.lower(playername);
-
-	if GRSS_MainOnly[sys]==1 and GRSS_Alts[playername] then
-		playername = GRSS_Alts[playername];
-	end
 
 	if GRSS_Full_DKP[sys]==nil then
 		GRSS_Full_DKP[sys] = {};
 	end
+
 	for i,v in pairs(GRSS_Full_DKP[sys]) do
 		if(string.lower(v.name)==playername) then
 			return i;
 		end
 	end
 	return -1;
+	
+end
+
+function GRSSFindPlayerSystemIndex(playername,sys)
+
+	FoundIndex = GRSSFindPlayerSystemIndex_NoAltCheck(playername,sys);
+
+	if FoundIndex==-1 and GRSS_MainOnly[sys]==1 and GRSS_Alts[playername] then
+		local newplayername = string.lower(GRSS_Alts[playername]);
+		FoundIndex = GRSSFindPlayerSystemIndex_NoAltCheck(newplayername,sys);
+	end
+
+	return FoundIndex;
 end
 
 function GRSSLookupPlayerDKP(playername,sys)
@@ -1573,13 +1617,11 @@ function GRSSAddPoints(playername,sys,pointtype,points)
 		temp.rankid = 0;
 		table.insert(GRSS_Full_DKP[sys],temp);
 		i = GRSSFindPlayerSystemIndex(playername,sys);
-		GRSSPrint("inswerting"..playername.."into"..sys);
 	end
 	
 
-	GRSSPrint("Intex:"..i);
 	if GRSS_Full_DKP[sys][i] == nil then
-		GRSSPrint("is null, some bug");
+		GRSSPrint("Player '"..playername.."' not found in list '"..sys.."' even after attempting to create. Please report this to DKPSystem.com.");
 	else
 		GRSS_Full_DKP[sys][i][pointtype] = GRSSNumNilZero(GRSS_Full_DKP[sys][i][pointtype]) + GRSSNumNilZero(points);
 		if GRSSCurrentSystem == sys then
@@ -1680,6 +1722,12 @@ function GuildRaidSnapShot_SlashHandler(msg)
 	elseif msglower == "nolootcombat" then
 		GRSS_LootPromptInCombat = 0;
 		GRSSModePrint("Loot Prompts In Combat",false);
+	elseif msglower == "yesold" then
+		GRSS_EnableOldBosses();
+		GRSSModePrint("Old Bosses",true);
+	elseif msglower == "noold" then
+		GRSS_DisableOldBosses();
+		GRSSModePrint("Old Bosses",false);
 	elseif msglower == "show" then
 		GRSS:Show();
 		GRSS_CompareVersions();
