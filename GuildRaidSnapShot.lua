@@ -20,7 +20,7 @@ GRSS_Bosses = {"Argaloth","Halfus Wyrmbreaker","Theralion","Cho'gall","Magmaw","
 GRSS_FastBossLookup = {};	--This gets initialized with the mod
 GRSS_Ignore = {"Onyxian","Onyxia's Elite Guard","Maexxna Spiderling","Patchwerk Golem","Hakkari","Son of Hakkar"," slain by ","Nightbane .+",".+the Crone","Netherspite Infernal","Ember of Al'ar","Sartharion Twilight Whelp","Sartharion Twilight Egg"};
 GRSS_Yells = {};
-GRSS_LootIgnore = {"Hakkari Bijou","Alabaster Idol","Amber Idol","Azure Idol","Jasper Idol","Lambent Idol","Obsidian Idol","Onyx Idol","Vermillion Idol","Lava Core","Fiery Core","Large .+ Shard","Small .+ Shard","Nexus Crystal","Wartorn .+ Scrap","Badge of Justice","Cosmic Infuser","^Devastation$","Infinity Blade","Phaseshift Bulwark","Warp Slicer","Staff of Disintegration","Netherstrand Longbow","Nether Spike","Bundle of Nether Spikes","Emblem of Heroism","Emblem of Valor","Abyss Crystal","Emblem of Conquest","Emblem of Triumph","Emblem of Frost"};
+GRSS_LootIgnore = {"Hakkari Bijou","Alabaster Idol","Amber Idol","Azure Idol","Jasper Idol","Lambent Idol","Obsidian Idol","Onyx Idol","Vermillion Idol","Lava Core","Fiery Core","Large .+ Shard","Small .+ Shard","Nexus Crystal","Wartorn .+ Scrap","Badge of Justice","Cosmic Infuser","^Devastation$","Infinity Blade","Phaseshift Bulwark","Warp Slicer","Staff of Disintegration","Netherstrand Longbow","Nether Spike","Bundle of Nether Spikes","Emblem of Heroism","Emblem of Valor","Abyss Crystal","Emblem of Conquest","Emblem of Triumph","Emblem of Frost","Maelstrom Crystal"};
 
 GRSS_Yells["Majordomo Executus"] = "Impossible!.+I submit!";
 GRSS_Yells["Attumen the Huntsman"] = "Always knew.+the hunted";
@@ -120,7 +120,7 @@ GRSSHelpMsg = {
 	"!waitlistwho = Show a list of who's on the waiting list",
 };
 
-local GRSSVersion = "2.022";
+local GRSSVersion = "2.023";
 local GRSSUsage = {
 	"Type |c00ffff00/grss <snapshotname>|r to take a snapshot (ex: |c00ffff00/grss Kel'Thuzad|r)",
 	"|c00ffff00/grss loot|r to open a loot prompt to manually record an item being received",
