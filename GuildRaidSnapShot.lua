@@ -10,7 +10,7 @@ GRSS_Systems = {};
 GRSS_Full_DKP = {};
 GRSS_Bosses_Old = {"Lucifron","Magmadar","Gehennas","Garr","Baron Geddon","Shazzrah","Sulfuron Harbinger","Golemagg the Incinerator","Ragnaros","Doom Lord Kazzak","Azuregos","Lethon","Emeriss","Onyxia","Taerar","Ysondre","Razorgore the Untamed","Vaelastrasz the Corrupt","Flamegor","Ebonroc","Firemaw","Chromaggus","Broodlord Lashlayer","Nefarian","Prophet Skeram","Lord Kri","Battleguard Sartura","Princess Huhuran","Fankriss the Unyielding","Viscidus","Ouro","C'Thun","Emperor Vek'nilash","Emperor Vek'lor","Anub'Rekhan","Grand Widow Faerlina","Maexxna","Feugen","Gluth","Gothik the Harvester","Grobbulus","Heigan the Unclean","Highlord Mograine","Instructor Razuvious","Lady Blaumeux","Loatheb","Noth the Plaguebringer","Patchwerk","Sapphiron","Sir Zeliek","Stalagg","Thaddius","Thane Korth'azz","Ossirian the Unscarred","Moam","Kurinnaxx","General Rajaxx","Buru the Gorger","Ayamiss the Hunter","Bloodlord Mandokir","Gahz'ranka","Gri'lek","Hakkar","Hazza'rah","High Priest Thekal","High Priest Venoxis","High Priestess Arlokk","High Priestess Jeklik","High Priestess Mar'li","Jin'do the Hexxer","Renataki","Wushoolay","The Crone","Hyakiss the Lurker","Julianne","Maiden of Virtue","Moroes","Netherspite","Nightbane","Prince Malchezaar","Rokad the Ravager","Romulo","Shade of Aran","Shadikith the Glider","Terestian Illhoof","The Big Bad Wolf","The Curator","Gruul the Dragonkiller","Magtheridon","High King Maulgar","Fathom-Lord Karathress","Hydross the Unstable","Lady Vashj","Leotheras the Blind","Morogrim Tidewalker","The Lurker Below","Al'ar","High Astromancer Solarian","Kael'thas Sunstrider","Void Reaver","Doomwalker","Attumen the Huntsman","Illidan Stormrage","Gathios the Shatterer","High Nethermancer Zerevor","Lady Malande","Veras Darkshadow","Essence of Anger","Gurtogg Bloodboil","Illidari Council","Teron Gorefiend","High Warlord Naj'entus","Mother Shahraz","Shade of Akama","Supremus","Anetheron","Archimonde","Azgalor","Kaz'rogal","Rage Winterchill","Nalorakk","Akil'zon","Jan'alai","Halazzi","Hex Lord Malacrass","Zul'jin","Kalecgos","Sathrovarr the Corruptor","Brutallus","Felmyst","Lady Sacrolash","Grand Warlock Alythess","M'uru","Entropius","Kil'jaeden","Kel'Thuzad","Sartharion","Archavon the Stone Watcher","Malygos","Flame Leviathan","Razorscale","XT-002 Deconstructor","Ignis the Furnace Master","Assembly of Iron","Kologarn","Auriaya","Mimiron","Hodir","Thorim","Freva","General Vezax","Yogg-Saron","Algalon the Observer","Emalon the Storm Watcher","Icehowl","Lord Jaraxxus","Fjola Lightbane","Anub'arak","Koralon the Flame Watcher","Lord Marrowgar","Lady Deathwhisper","Deathbringer Saurfang","Festergut","Rotface","Professor Putricide","Blood-Queen Lana'thal","Valithria Dreamwalker","Sindragosa","The Lich King","Prince Keleseth"};
 
-GRSS_Bosses = {"Argaloth","Halfus Wyrmbreaker","Theralion","Cho'gall","Magmaw","Omnitron Defense System","Maloriak","Atramedes","Chimaeron","Nefarian","Conclave of the Wind","Al'Akir","Sinestra"
+GRSS_Bosses = {"Argaloth","Halfus Wyrmbreaker","Theralion","Cho'gall","Magmaw","Omnitron Defense System","Maloriak","Atramedes","Chimaeron","Nefarian","Al'Akir","Sinestra"
 
 --[[uncomment for testing the mobs outside shattrath
 ,"Dreadfang Lurker","Timber Worg","Ironspine Petrifier"
@@ -34,6 +34,8 @@ GRSS_Yells["High Overlord Saurfang"] = "The Alliance falter. Onward to the Lich 
 GRSS_Yells["Muradin Bronzebeard"] = "Don't say I didn't warn ya, scoundrels! Onward, brothers and sisters!";
 GRSS_Yells["Valithria Dreamwalker"] = "I am renewed!.+to rest!";
 GRSS_Yells["Elementium Monstrosity"] = "IMPOSSIBLE";
+GRSS_Yells["Omnitron"] = "Defense systems obliterated. Powering down.";
+GRSS_Yells["Al'Akir"] = "The Conclave of Wind has dissipated.+";
 --GRSS_Yells["Chops"] = "this is a test";
 
 GRSS_Yell_Redirect = {};
@@ -42,6 +44,9 @@ GRSS_Yell_Redirect["King Varian Wrynn"] = "Faction Champions";
 GRSS_Yell_Redirect["High Overlord Saurfang"] = "Gunship Battle";
 GRSS_Yell_Redirect["Muradin Bronzebeard"] = "Gunship Battle";
 GRSS_Yell_Redirect["Elementium Monstrosity"] = "Twilight Ascendants";
+GRSS_Yell_Redirect["Omnitron"] = "Omnitron Defense System";
+GRSS_Yell_Redirect["Al'Akir"] = "Conclave of Wind";
+
 --GRSS_Yell_Redirect["Chops"] = "Faction Champions Test";
 
 GRSS_BossEmote = {};
@@ -120,7 +125,7 @@ GRSSHelpMsg = {
 	"!waitlistwho = Show a list of who's on the waiting list",
 };
 
-local GRSSVersion = "2.023";
+local GRSSVersion = "2.024";
 local GRSSUsage = {
 	"Type |c00ffff00/grss <snapshotname>|r to take a snapshot (ex: |c00ffff00/grss Kel'Thuzad|r)",
 	"|c00ffff00/grss loot|r to open a loot prompt to manually record an item being received",
