@@ -12,8 +12,8 @@ GRSS_Bosses_Old = {"Lucifron","Magmadar","Gehennas","Garr","Baron Geddon","Shazz
 
 GRSS_Bosses = {"Argaloth","Halfus Wyrmbreaker","Theralion","Cho'gall","Magmaw","Omnitron Defense System","Maloriak","Atramedes","Chimaeron","Nefarian","Al'Akir","Sinestra"
 
---[[uncomment for testing the mobs outside shattrath
-,"Dreadfang Lurker","Timber Worg","Ironspine Petrifier"
+--[[uncomment for testing the mobs outside shattrath and orgrimmar
+,"Dreadfang Lurker","Timber Worg","Ironspine Petrifier","Talrendis Scout","Weakened Mosshoof Stag"
 --]]
 
 };
@@ -125,7 +125,7 @@ GRSSHelpMsg = {
 	"!waitlistwho = Show a list of who's on the waiting list",
 };
 
-local GRSSVersion = "2.024";
+local GRSSVersion = "2.025";
 local GRSSUsage = {
 	"Type |c00ffff00/grss <snapshotname>|r to take a snapshot (ex: |c00ffff00/grss Kel'Thuzad|r)",
 	"|c00ffff00/grss loot|r to open a loot prompt to manually record an item being received",
@@ -1144,7 +1144,7 @@ function nn(v)
 end
 
 function GuildRaidSnapShot_OnEvent(this,event,...)
-	local arg1, arg2, arg3, arg4, arg5, arg6, arg7 = ...;
+	local arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 = ...;
 	if(event == "CHAT_MSG_MONSTER_YELL" --[[or event == "CHAT_MSG_YELL"--]]) then
 		if GRSS_Auto==1 and GRSS_Yells[arg2] ~= nil then
 			if string.find(arg1,GRSS_Yells[arg2]) ~= nil then
@@ -1186,11 +1186,11 @@ function GuildRaidSnapShot_OnEvent(this,event,...)
 	elseif(event=="COMBAT_LOG_EVENT_UNFILTERED") then
 		if(arg2=="PARTY_KILL" or arg2=="UNIT_DIED") then
 			if not IsActiveBattlefieldArena() then
-				if GRSS_FastBossLookup[arg7] ~= nil and GRSS_Auto == 1 then
+				if GRSS_FastBossLookup[arg8] ~= nil and GRSS_Auto == 1 then
 					if InCombatLockdown() then
-						GRSS_PendingSnapShotName = arg7;
+						GRSS_PendingSnapShotName = arg8;
 					else
-						GRSS_TakeSnapShot(arg7);
+						GRSS_TakeSnapShot(arg8);
 					end
 				end
 			end
