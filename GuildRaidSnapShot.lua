@@ -126,7 +126,7 @@ GRSSHelpMsg = {
 	"!waitlistwho = Show a list of who's on the waiting list",
 };
 
-local GRSSVersion = "2.025";
+local GRSSVersion = "2.026";
 local GRSSUsage = {
 	"Type |c00ffff00/grss <snapshotname>|r to take a snapshot (ex: |c00ffff00/grss Kel'Thuzad|r)",
 	"|c00ffff00/grss loot|r to open a loot prompt to manually record an item being received",
