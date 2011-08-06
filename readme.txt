@@ -1,5 +1,5 @@
 GuildRaidSnapShot Mod
-Copyright (c) 2005-2010 By DKPSystem.com
+Copyright (c) 2005-2011 By DKPSystem.com
 You can get the latest version of the GuildRaidSnapShot mod from
 http://www.dkpsystem.com/settings/www/files/GuildRaidSnapShot.zip
 
