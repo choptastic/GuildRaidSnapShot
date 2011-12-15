@@ -1,5 +1,9 @@
 GuildRaidSnapShot Mod
 Copyright (c) 2005-2011 By DKPSystem.com
+
+See the file LICENSE.txt for licence details
+
+
 You can get the latest version of the GuildRaidSnapShot mod from
 http://www.dkpsystem.com/settings/www/files/GuildRaidSnapShot.zip
 
@@ -16,12 +20,7 @@ For easy access, you can fork our official repo on Github:
 
 http://github.com/choptastic/GuildRaidSnapShot
 
-
-If you do, we'd be happy to hear how you've tweaked this mod to support your
-particular system.
-
-The only restriction about copying and tweaking is that credit always be given
-to DKPSystem.com.
+Got a patch you want added to the official repo? Submit a pull request.
 
 The code for the "GetGRSSDKP.exe" program is found in "GetGRSSDKP.pl" a perl
 program using Perl/Tk.  You'll need to get a version of perl (www.perl.org) to 
