@@ -1,3 +1,7 @@
+-- GuildRaidsnapShot Mod
+-- Copyright (c) 2005-2012 Sigma Star Systems
+-- Released under the MIT License. See LICENSE.txt for full license
+
 GuildRaidSnapShot_SnapShots = {};
 GuildRaidSnapShot_Loot = {};
 GuildRaidSnapShot_Notes = {};
@@ -10,9 +14,19 @@ GRSS_Systems = {};
 GRSS_Full_DKP = {};
 GRSS_Bosses_Old = {"Lucifron","Magmadar","Gehennas","Garr","Baron Geddon","Shazzrah","Sulfuron Harbinger","Golemagg the Incinerator","Ragnaros","Doom Lord Kazzak","Azuregos","Lethon","Emeriss","Onyxia","Taerar","Ysondre","Razorgore the Untamed","Vaelastrasz the Corrupt","Flamegor","Ebonroc","Firemaw","Chromaggus","Broodlord Lashlayer","Nefarian","Prophet Skeram","Lord Kri","Battleguard Sartura","Princess Huhuran","Fankriss the Unyielding","Viscidus","Ouro","C'Thun","Emperor Vek'nilash","Emperor Vek'lor","Anub'Rekhan","Grand Widow Faerlina","Maexxna","Feugen","Gluth","Gothik the Harvester","Grobbulus","Heigan the Unclean","Highlord Mograine","Instructor Razuvious","Lady Blaumeux","Loatheb","Noth the Plaguebringer","Patchwerk","Sapphiron","Sir Zeliek","Stalagg","Thaddius","Thane Korth'azz","Ossirian the Unscarred","Moam","Kurinnaxx","General Rajaxx","Buru the Gorger","Ayamiss the Hunter","Bloodlord Mandokir","Gahz'ranka","Gri'lek","Hakkar","Hazza'rah","High Priest Thekal","High Priest Venoxis","High Priestess Arlokk","High Priestess Jeklik","High Priestess Mar'li","Jin'do the Hexxer","Renataki","Wushoolay","The Crone","Hyakiss the Lurker","Julianne","Maiden of Virtue","Moroes","Netherspite","Nightbane","Prince Malchezaar","Rokad the Ravager","Romulo","Shade of Aran","Shadikith the Glider","Terestian Illhoof","The Big Bad Wolf","The Curator","Gruul the Dragonkiller","Magtheridon","High King Maulgar","Fathom-Lord Karathress","Hydross the Unstable","Lady Vashj","Leotheras the Blind","Morogrim Tidewalker","The Lurker Below","Al'ar","High Astromancer Solarian","Kael'thas Sunstrider","Void Reaver","Doomwalker","Attumen the Huntsman","Illidan Stormrage","Gathios the Shatterer","High Nethermancer Zerevor","Lady Malande","Veras Darkshadow","Essence of Anger","Gurtogg Bloodboil","Illidari Council","Teron Gorefiend","High Warlord Naj'entus","Mother Shahraz","Shade of Akama","Supremus","Anetheron","Archimonde","Azgalor","Kaz'rogal","Rage Winterchill","Nalorakk","Akil'zon","Jan'alai","Halazzi","Hex Lord Malacrass","Zul'jin","Kalecgos","Sathrovarr the Corruptor","Brutallus","Felmyst","Lady Sacrolash","Grand Warlock Alythess","M'uru","Entropius","Kil'jaeden","Kel'Thuzad","Sartharion","Archavon the Stone Watcher","Malygos","Flame Leviathan","Razorscale","XT-002 Deconstructor","Ignis the Furnace Master","Assembly of Iron","Kologarn","Auriaya","Mimiron","Hodir","Thorim","Freva","General Vezax","Yogg-Saron","Algalon the Observer","Emalon the Storm Watcher","Icehowl","Lord Jaraxxus","Fjola Lightbane","Anub'arak","Koralon the Flame Watcher","Lord Marrowgar","Lady Deathwhisper","Deathbringer Saurfang","Festergut","Rotface","Professor Putricide","Blood-Queen Lana'thal","Valithria Dreamwalker","Sindragosa","The Lich King","Prince Keleseth"};
 
-GRSS_Bosses = {"Argaloth","Halfus Wyrmbreaker","Theralion","Cho'gall","Magmaw","Omnitron Defense System","Maloriak","Atramedes","Chimaeron","Nefarian","Al'Akir","Sinestra","Shannox","Lord Rhyolith","Beth'tilac","Alysrazor","Baelroc","Majordomo Staghelm","Ragnaros","Volcanus","Morchok","Warlord Zon'ozz","Yor'sahj the Unsleeping","Hagara the Stormbinder","Ultraxion","Warmaster Blackhorn","Deathwing",
+GRSS_Bosses = {
 
----[[uncomment for testing the mobs outside shattrath and orgrimmar
+-- The Following are Cataclysm Bosses and should be moved to Bosses_Old with the release of MOP
+"Argaloth","Halfus Wyrmbreaker","Theralion","Cho'gall","Magmaw","Omnitron Defense System","Maloriak","Atramedes","Chimaeron","Nefarian","Al'Akir","Sinestra","Shannox","Lord Rhyolith","Beth'tilac","Alysrazor","Baelroc","Majordomo Staghelm","Ragnaros","Volcanus","Morchok","Warlord Zon'ozz","Yor'sahj the Unsleeping","Hagara the Stormbinder","Ultraxion","Warmaster Blackhorn","Deathwing",
+
+-- MOP Bosses - not tested
+"Imperial Vizier Zor'lok","Blade Lord Ta'yak","Garalon","Wind Lord Mel'jarak","Amber-Shaper Un-sok","Grand Empress Shek'zeer",
+"Jade Guardian","Feng the Accursed","Gara'jal the Spiritbinder","The Spirit Kings","Elegon","Jan-xi",
+"Sha of Anger","Salyis's Warband",
+"Tsulong","Lei Shi","Sha of Fear",
+
+
+--[[uncomment for testing the mobs outside shattrath and orgrimmar
 "Dreadfang Lurker","Timber Worg","Ironspine Petrifier","Talrendis Scout","Weakened Mosshoof Stag"
 --]]
 
@@ -36,6 +50,8 @@ GRSS_Yells["Valithria Dreamwalker"] = "I am renewed!.+to rest!";
 GRSS_Yells["Elementium Monstrosity"] = "IMPOSSIBLE";
 GRSS_Yells["Omnitron"] = "Defense systems obliterated. Powering down.";
 GRSS_Yells["Al'Akir"] = "The Conclave of Wind has dissipated.+";
+GRSS_Yells["Lorewalker Cho"] = "A secret passage has opened beneath the platform, this way!";
+GRSS_Yells["Elder Asani"] = "The Sha...must be...stopped.";
 
 --GRSS_Yells["Chops"] = "this is a test";
 
@@ -47,8 +63,14 @@ GRSS_Yell_Redirect["Muradin Bronzebeard"] = "Gunship Battle";
 GRSS_Yell_Redirect["Elementium Monstrosity"] = "Twilight Ascendants";
 GRSS_Yell_Redirect["Omnitron"] = "Omnitron Defense System";
 GRSS_Yell_Redirect["Al'Akir"] = "Conclave of Wind";
+GRSS_Yell_Redirect["Lorewalker Cho"] = "The Spirit Kings";
+GRSS_Yell_Redirect["Elder Asani"] = "Protectors of the Endless";
 
---GRSS_Yell_Redirect["Chops"] = "Faction Champions Test";
+
+GRSS_Boss_Redirect = {};
+GRSS_Boss_Redirect["Jade Guardian"] = "The Stone Guard";
+GRSS_Boss_Redirect["Jan-xi"] = "Will of the Emperor";
+--GRSS_Boss_Redirect["Weakened Mosshoof Stag"] = "Test Redirect";
 
 GRSS_BossEmote = {};
 GRSS_BossEmote["Chess"] = "doors of the Gamesman's Hall";
@@ -126,7 +148,7 @@ GRSSHelpMsg = {
 	"!waitlistwho = Show a list of who's on the waiting list",
 };
 
-local GRSSVersion = "2.027";
+local GRSSVersion = "2.028";
 local GRSSUsage = {
 	"Type |c00ffff00/grss <snapshotname>|r to take a snapshot (ex: |c00ffff00/grss Kel'Thuzad|r)",
 	"|c00ffff00/grss loot|r to open a loot prompt to manually record an item being received",
@@ -1187,11 +1209,17 @@ function GuildRaidSnapShot_OnEvent(this,event,...)
 	elseif(event=="COMBAT_LOG_EVENT_UNFILTERED") then
 		if(arg2=="PARTY_KILL" or arg2=="UNIT_DIED") then
 			if not IsActiveBattlefieldArena() then
-				if GRSS_FastBossLookup[arg9] ~= nil and GRSS_Auto == 1 then
+				local bossname = arg9;
+				if GRSS_FastBossLookup[bossname] ~= nil and GRSS_Auto == 1 then
+
+					if GRSS_Boss_Redirect[bossname] ~= nil then
+						bossname = GRSS_Boss_Redirect[bossname];
+					end
+
 					if InCombatLockdown() then
-						GRSS_PendingSnapShotName = arg9;
+						GRSS_PendingSnapShotName = bossname;
 					else
-						GRSS_TakeSnapShot(arg9);
+						GRSS_TakeSnapShot(bossname);
 					end
 				end
 			end
@@ -1766,7 +1794,7 @@ function GuildRaidSnapShot_SlashHandler(msg)
 	elseif msglower == "yesparty" then
 		GRSS_DoingParty = 1;
 		GRSSModePrint("Party mode",true);
-	elseif GetNumRaidMembers() > 0 or (GRSS_DoingParty == 1 and GetNumPartyMembers() > 0) then
+	elseif GetNumGroupMembers() > 0 and (IsInRaid() or GRSS_DoingParty == 1) then
 		GRSS_TakeSnapShot(msg);
 	else
 		GRSSPrint("You're not in a raid");
@@ -1813,7 +1841,7 @@ function GRSSYellow(msg)
 end
 
 function GRSS_CaptureLoot(msg)
-	if GetNumRaidMembers()>0 or GetNumPartyMembers()>0 then
+	if GetNumGroupMembers()>0 then
 		local s, e, player, link = string.find(msg, "([^%s]+) receives loot: (.+)%.");
 		if(player == nil) then
 			s, e, link = string.find(msg, "You receive loot: (.+)%.");
@@ -1956,8 +1984,8 @@ function GRSS_RaidCommaList()
 	local NumOnline=0;
 	local zone="";
 	local con;
-	local n = GetNumRaidMembers();
-	if GetNumRaidMembers()>1 then
+	local n = GetNumGroupMembers();
+	if GetNumGroupMembers()>1 then
 		for i = 1, n do
 			MemName,_,_,_,_,_,zone,Online = GetRaidRosterInfo(i);
 			if Online==1 then
@@ -1981,24 +2009,6 @@ function GRSS_RaidCommaList()
 				ToggleFriendsFrame(4);
 			end
 		end
-	else
-		n = GetNumPartyMembers();
-		zone = "";
-		for i = 1, n do
-			MemName = UnitName("party"..i);
-			if UnitIsConnected("party"..i) then
-				con=1
-			else
-				con=0
-			end
-			if MemName ~= nil and con==1 then
-				members = members..MemName..":"..zone..", ";
-
-				NumOnline = NumOnline + 1
-			end
-		end
-		members = members..UnitName("player")..":"..zone;
-		NumOnline = NumOnline + 1;
 	end
 	return NumOnline,members
 end
@@ -2044,29 +2054,14 @@ function GRSS_RaidTable()
 	local members={};
 	local NumOnline=0;
 	local con;
-	local n = GetNumRaidMembers();
-	if GetNumRaidMembers()>1 then
+	local n = GetNumGroupMembers();
+	if GetNumGroupMembers()>1 then
 		for i = 1, n do
 			MemName,_,_,_,_,_,_,Online = GetRaidRosterInfo(i);
 			if Online==1 then
 				members[string.upper(MemName)]=1;
 			end
 		end
-	else
-		n = GetNumPartyMembers();
-		zone = "";
-		for i = 1, n do
-			MemName = UnitName("party"..i);
-			if UnitIsConnected("party"..i) then
-				con=1
-			else
-				con=0
-			end
-			if MemName ~= nil and con==1 then
-				members[string.upper(MemName)]=1;
-			end
-		end
-		members[string.upper(UnitName("player"))]=1;
 	end
 	return members;
 end
@@ -2270,7 +2265,7 @@ function GRSSClassFilterDropDown_OnLoad(this)
 end
 
 function GRSSClassFilterDropDown_Initialize()
-	local Actions = {"All","Druid","Hunter","Mage","Paladin","Priest","Rogue","Shaman","Warlock","Warrior","Death Knight"};
+	local Actions = {"All","Druid","Hunter","Mage","Monk","Paladin","Priest","Rogue","Shaman","Warlock","Warrior","Death Knight"};
 	local info = {};
 	
 	info.notCheckable = nil;
@@ -2654,7 +2649,7 @@ end
 function GRSS_GetLoot()
 	GRSS_Loot = {};
 	for i = 1, GetNumLootItems() do
-     		if LootSlotIsItem(i) then
+     		if LootSlotHasItem(i) then
        			local link = GetLootSlotLink(i);
        			local s, e, color, item = string.find(link, "|c(%x+)|Hitem[:%d%-]+|h%[(.-)%]|h|r");
 			if(color and item and GRSS_Colors[color]) then
