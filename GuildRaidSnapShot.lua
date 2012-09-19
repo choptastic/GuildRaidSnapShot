@@ -67,6 +67,9 @@ GRSS_Yell_Redirect["Lorewalker Cho"] = "The Spirit Kings";
 GRSS_Yell_Redirect["Elder Asani"] = "Protectors of the Endless";
 
 
+
+--GRSS_Yell_Redirect["Chops"] = "Faction Champions Test";
+
 GRSS_Boss_Redirect = {};
 GRSS_Boss_Redirect["Jade Guardian"] = "The Stone Guard";
 GRSS_Boss_Redirect["Jan-xi"] = "Will of the Emperor";
@@ -382,7 +385,7 @@ function GuildRaidSnapShot_OnLoad(this)
 			GRSS_ReadyForTimer = true;
 			GRSSPrint("Snapshot Timer Stopped");
 		end,
-		timeout
+		timeout = 0
 	};
 
 	StaticPopupDialogs["GRSS_STARTTIMER"] = {
@@ -876,6 +879,7 @@ function GRSS_TimerRunningCheck()
 		if mins < 0 then
 			mins = 0
 		end	
+		GRSSPrint("timercheck");
 		StaticPopup_Show("GRSS_TIMERCHECK",mins);
 	else
 		GRSS_ReadyForTimer = true;
