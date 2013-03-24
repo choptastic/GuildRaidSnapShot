@@ -1,5 +1,5 @@
 -- GuildRaidsnapShot Mod
--- Copyright (c) 2005-2012 Sigma Star Systems
+-- Copyright (c) 2005-2013 Sigma Star Systems
 -- Released under the MIT License. See LICENSE.txt for full license
 
 GuildRaidSnapShot_SnapShots = {};
@@ -24,6 +24,7 @@ GRSS_Bosses = {
 "Jade Guardian","Feng the Accursed","Gara'jal the Spiritbinder","The Spirit Kings","Elegon","Jan-xi",
 "Sha of Anger","Salyis's Warband",
 "Tsulong","Lei Shi","Sha of Fear",
+"Jin'rokh the Breaker","Horridon","Tortos","Megaera","Ji-Kun","Durumu the Forgotten","Primordius","Dark Animus","Iron Qon","Twin Consorts","Lei Shen","Ra-den",
 
 
 --[[uncomment for testing the mobs outside shattrath and orgrimmar
@@ -151,7 +152,7 @@ GRSSHelpMsg = {
 	"!waitlistwho = Show a list of who's on the waiting list",
 };
 
-local GRSSVersion = "2.028";
+local GRSSVersion = "2.029";
 local GRSSUsage = {
 	"Type |c00ffff00/grss <snapshotname>|r to take a snapshot (ex: |c00ffff00/grss Kel'Thuzad|r)",
 	"|c00ffff00/grss loot|r to open a loot prompt to manually record an item being received",
