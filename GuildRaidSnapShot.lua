@@ -12,14 +12,14 @@ GRSS_MainOnly = {};
 GRSS_Divide = {};
 GRSS_Systems = {};
 GRSS_Full_DKP = {};
-GRSS_Bosses_Old = {"Lucifron","Magmadar","Gehennas","Garr","Baron Geddon","Shazzrah","Sulfuron Harbinger","Golemagg the Incinerator","Ragnaros","Doom Lord Kazzak","Azuregos","Lethon","Emeriss","Onyxia","Taerar","Ysondre","Razorgore the Untamed","Vaelastrasz the Corrupt","Flamegor","Ebonroc","Firemaw","Chromaggus","Broodlord Lashlayer","Nefarian","Prophet Skeram","Lord Kri","Battleguard Sartura","Princess Huhuran","Fankriss the Unyielding","Viscidus","Ouro","C'Thun","Emperor Vek'nilash","Emperor Vek'lor","Anub'Rekhan","Grand Widow Faerlina","Maexxna","Feugen","Gluth","Gothik the Harvester","Grobbulus","Heigan the Unclean","Highlord Mograine","Instructor Razuvious","Lady Blaumeux","Loatheb","Noth the Plaguebringer","Patchwerk","Sapphiron","Sir Zeliek","Stalagg","Thaddius","Thane Korth'azz","Ossirian the Unscarred","Moam","Kurinnaxx","General Rajaxx","Buru the Gorger","Ayamiss the Hunter","Bloodlord Mandokir","Gahz'ranka","Gri'lek","Hakkar","Hazza'rah","High Priest Thekal","High Priest Venoxis","High Priestess Arlokk","High Priestess Jeklik","High Priestess Mar'li","Jin'do the Hexxer","Renataki","Wushoolay","The Crone","Hyakiss the Lurker","Julianne","Maiden of Virtue","Moroes","Netherspite","Nightbane","Prince Malchezaar","Rokad the Ravager","Romulo","Shade of Aran","Shadikith the Glider","Terestian Illhoof","The Big Bad Wolf","The Curator","Gruul the Dragonkiller","Magtheridon","High King Maulgar","Fathom-Lord Karathress","Hydross the Unstable","Lady Vashj","Leotheras the Blind","Morogrim Tidewalker","The Lurker Below","Al'ar","High Astromancer Solarian","Kael'thas Sunstrider","Void Reaver","Doomwalker","Attumen the Huntsman","Illidan Stormrage","Gathios the Shatterer","High Nethermancer Zerevor","Lady Malande","Veras Darkshadow","Essence of Anger","Gurtogg Bloodboil","Illidari Council","Teron Gorefiend","High Warlord Naj'entus","Mother Shahraz","Shade of Akama","Supremus","Anetheron","Archimonde","Azgalor","Kaz'rogal","Rage Winterchill","Nalorakk","Akil'zon","Jan'alai","Halazzi","Hex Lord Malacrass","Zul'jin","Kalecgos","Sathrovarr the Corruptor","Brutallus","Felmyst","Lady Sacrolash","Grand Warlock Alythess","M'uru","Entropius","Kil'jaeden","Kel'Thuzad","Sartharion","Archavon the Stone Watcher","Malygos","Flame Leviathan","Razorscale","XT-002 Deconstructor","Ignis the Furnace Master","Assembly of Iron","Kologarn","Auriaya","Mimiron","Hodir","Thorim","Freva","General Vezax","Yogg-Saron","Algalon the Observer","Emalon the Storm Watcher","Icehowl","Lord Jaraxxus","Fjola Lightbane","Anub'arak","Koralon the Flame Watcher","Lord Marrowgar","Lady Deathwhisper","Deathbringer Saurfang","Festergut","Rotface","Professor Putricide","Blood-Queen Lana'thal","Valithria Dreamwalker","Sindragosa","The Lich King","Prince Keleseth"};
+GRSS_Bosses_Old = {"Lucifron","Magmadar","Gehennas","Garr","Baron Geddon","Shazzrah","Sulfuron Harbinger","Golemagg the Incinerator","Ragnaros","Doom Lord Kazzak","Azuregos","Lethon","Emeriss","Onyxia","Taerar","Ysondre","Razorgore the Untamed","Vaelastrasz the Corrupt","Flamegor","Ebonroc","Firemaw","Chromaggus","Broodlord Lashlayer","Nefarian","Prophet Skeram","Lord Kri","Battleguard Sartura","Princess Huhuran","Fankriss the Unyielding","Viscidus","Ouro","C'Thun","Emperor Vek'nilash","Emperor Vek'lor","Anub'Rekhan","Grand Widow Faerlina","Maexxna","Feugen","Gluth","Gothik the Harvester","Grobbulus","Heigan the Unclean","Highlord Mograine","Instructor Razuvious","Lady Blaumeux","Loatheb","Noth the Plaguebringer","Patchwerk","Sapphiron","Sir Zeliek","Stalagg","Thaddius","Thane Korth'azz","Ossirian the Unscarred","Moam","Kurinnaxx","General Rajaxx","Buru the Gorger","Ayamiss the Hunter","Bloodlord Mandokir","Gahz'ranka","Gri'lek","Hakkar","Hazza'rah","High Priest Thekal","High Priest Venoxis","High Priestess Arlokk","High Priestess Jeklik","High Priestess Mar'li","Jin'do the Hexxer","Renataki","Wushoolay","The Crone","Hyakiss the Lurker","Julianne","Maiden of Virtue","Moroes","Netherspite","Nightbane","Prince Malchezaar","Rokad the Ravager","Romulo","Shade of Aran","Shadikith the Glider","Terestian Illhoof","The Big Bad Wolf","The Curator","Gruul the Dragonkiller","Magtheridon","High King Maulgar","Fathom-Lord Karathress","Hydross the Unstable","Lady Vashj","Leotheras the Blind","Morogrim Tidewalker","The Lurker Below","Al'ar","High Astromancer Solarian","Kael'thas Sunstrider","Void Reaver","Doomwalker","Attumen the Huntsman","Illidan Stormrage","Gathios the Shatterer","High Nethermancer Zerevor","Lady Malande","Veras Darkshadow","Essence of Anger","Gurtogg Bloodboil","Illidari Council","Teron Gorefiend","High Warlord Naj'entus","Mother Shahraz","Shade of Akama","Supremus","Anetheron","Archimonde","Azgalor","Kaz'rogal","Rage Winterchill","Nalorakk","Akil'zon","Jan'alai","Halazzi","Hex Lord Malacrass","Zul'jin","Kalecgos","Sathrovarr the Corruptor","Brutallus","Felmyst","Lady Sacrolash","Grand Warlock Alythess","M'uru","Entropius","Kil'jaeden","Kel'Thuzad","Sartharion","Archavon the Stone Watcher","Malygos","Flame Leviathan","Razorscale","XT-002 Deconstructor","Ignis the Furnace Master","Assembly of Iron","Kologarn","Auriaya","Mimiron","Hodir","Thorim","Freva","General Vezax","Yogg-Saron","Algalon the Observer","Emalon the Storm Watcher","Icehowl","Lord Jaraxxus","Fjola Lightbane","Anub'arak","Koralon the Flame Watcher","Lord Marrowgar","Lady Deathwhisper","Deathbringer Saurfang","Festergut","Rotface","Professor Putricide","Blood-Queen Lana'thal","Valithria Dreamwalker","Sindragosa","The Lich King","Prince Keleseth",
+
+-- Cata Bosses
+"Argaloth","Halfus Wyrmbreaker","Theralion","Cho'gall","Magmaw","Omnitron Defense System","Maloriak","Atramedes","Chimaeron","Nefarian","Al'Akir","Sinestra","Shannox","Lord Rhyolith","Beth'tilac","Alysrazor","Baelroc","Majordomo Staghelm","Ragnaros","Volcanus","Morchok","Warlord Zon'ozz","Yor'sahj the Unsleeping","Hagara the Stormbinder","Ultraxion","Warmaster Blackhorn","Deathwing",
+};
 
 GRSS_Bosses = {
-
--- The Following are Cataclysm Bosses and should be moved to Bosses_Old with the release of MOP
-"Argaloth","Halfus Wyrmbreaker","Theralion","Cho'gall","Magmaw","Omnitron Defense System","Maloriak","Atramedes","Chimaeron","Nefarian","Al'Akir","Sinestra","Shannox","Lord Rhyolith","Beth'tilac","Alysrazor","Baelroc","Majordomo Staghelm","Ragnaros","Volcanus","Morchok","Warlord Zon'ozz","Yor'sahj the Unsleeping","Hagara the Stormbinder","Ultraxion","Warmaster Blackhorn","Deathwing",
-
--- MOP Bosses - not tested
+-- MOP Bosses
 "Imperial Vizier Zor'lok","Blade Lord Ta'yak","Garalon","Wind Lord Mel'jarak","Amber-Shaper Un-sok","Grand Empress Shek'zeer",
 "Jade Guardian","Feng the Accursed","Gara'jal the Spiritbinder","The Spirit Kings","Elegon","Jan-xi",
 "Sha of Anger","Salyis's Warband",
@@ -37,6 +37,7 @@ GRSS_Ignore = {"Onyxian","Onyxia's Elite Guard","Maexxna Spiderling","Patchwerk 
 GRSS_Yells = {};
 GRSS_LootIgnore = {"Hakkari Bijou","Alabaster Idol","Amber Idol","Azure Idol","Jasper Idol","Lambent Idol","Obsidian Idol","Onyx Idol","Vermillion Idol","Lava Core","Fiery Core","Large .+ Shard","Small .+ Shard","Nexus Crystal","Wartorn .+ Scrap","Badge of Justice","Cosmic Infuser","^Devastation$","Infinity Blade","Phaseshift Bulwark","Warp Slicer","Staff of Disintegration","Netherstrand Longbow","Nether Spike","Bundle of Nether Spikes","Emblem of Heroism","Emblem of Valor","Abyss Crystal","Emblem of Conquest","Emblem of Triumph","Emblem of Frost","Maelstrom Crystal"};
 
+-- GRSS_Yells = Bosses that when they die trigger a snapshot
 GRSS_Yells["Majordomo Executus"] = "Impossible!.+I submit!";
 GRSS_Yells["Attumen the Huntsman"] = "Always knew.+the hunted";
 GRSS_Yells["Freya"] = "His hold on me dissipates";
@@ -56,6 +57,8 @@ GRSS_Yells["Elder Asani"] = "The Sha...must be...stopped.";
 
 --GRSS_Yells["Chops"] = "this is a test";
 
+-- GRSS_Yell_Redirects = Bosses that if they yell something from above, the snapshot gets recorded not as the name of the mob, but as the assignment
+-- For example, in Garrosh Hellscream yells "That was just a test of what the future brings. FOR THE HORDE", the snapshot will be recorded as "Faction Champions"
 GRSS_Yell_Redirect = {};
 GRSS_Yell_Redirect["Garrosh Hellscream"] = "Faction Champions";
 GRSS_Yell_Redirect["King Varian Wrynn"] = "Faction Champions";
@@ -66,19 +69,25 @@ GRSS_Yell_Redirect["Omnitron"] = "Omnitron Defense System";
 GRSS_Yell_Redirect["Al'Akir"] = "Conclave of Wind";
 GRSS_Yell_Redirect["Lorewalker Cho"] = "The Spirit Kings";
 GRSS_Yell_Redirect["Elder Asani"] = "Protectors of the Endless";
-
-
-
 --GRSS_Yell_Redirect["Chops"] = "Faction Champions Test";
 
+-- GRSS_BossRedirects = When a specific boss dies, the snapshot is recorded as something else
+-- In this case, if "Jade Guardian" dies, the snapshot is recorded as "The Stone Guard"
+-- This is useful for bosses that are linked together and share health.
 GRSS_Boss_Redirect = {};
 GRSS_Boss_Redirect["Jade Guardian"] = "The Stone Guard";
 GRSS_Boss_Redirect["Jan-xi"] = "Will of the Emperor";
 --GRSS_Boss_Redirect["Weakened Mosshoof Stag"] = "Test Redirect";
 
+-- GRSS_BossEmote = events that aren't yells or anything, but something represent "world emotes"
+-- For the "Chess" event example from Burning Crusade's Karazhan, when the Chess events ends, there
+-- is a world-emote like "The doors of the Gamesman's Hall shake...". This is how it triggers when the event happens
 GRSS_BossEmote = {};
 GRSS_BossEmote["Chess"] = "doors of the Gamesman's Hall";
+
+-- GRSS_ZoneIgnore is probably no longer necessary, since GRSS already checks if you're in a PVP (Arena or Battleground)
 GRSS_ZoneIgnore = {"Arathi Basin","Alterac Valley","Eye of the Storm","Warsong Gulch"};
+
 GRSS_Auto = 1;
 GRSS_LootCap = 1;
 GRSS_Bidding = 0;
@@ -237,10 +246,11 @@ function GRSS_DisableOldBosses()
 	end
 end
 
-
+-- ******************************************************************
+-- ************************** ENTRY POINT ***************************
+-- ******************************************************************
 function GuildRaidSnapShot_OnLoad(this)
 
-	--GRSSChangeSystem(0);
 	SlashCmdList["GuildRaidSnapShot"] = GuildRaidSnapShot_SlashHandler;
 	SLASH_GuildRaidSnapShot1 = "/grss";
 	SLASH_GuildRaidSnapShot1 = "/GRSS";
@@ -250,10 +260,6 @@ function GuildRaidSnapShot_OnLoad(this)
 	else
 		GRSS_DisableOldBosses();
 	end
-
-	--[[for i,v in pairs(GRSS_Bosses) do
-		GRSS_FastBossLookup[v] = v;
-	end--]]
 
 	this:RegisterEvent("PLAYER_REGEN_ENABLED");
 	this:RegisterEvent("PLAYER_REGEN_DISABLED");
@@ -281,8 +287,6 @@ function GuildRaidSnapShot_OnLoad(this)
 	DEFAULT_CHAT_FRAME:AddMessage("GuildRaidSnapShot (By DKPSystem.com) Version "..GRSSVersion.." loaded. ");
 	DEFAULT_CHAT_FRAME:AddMessage("Type |c00ffff00/grss|r to get a list of options for GuildRaidSnapShot");
 
-	--GRSS_ChatFrame_OnEvent_Original = ChatFrame_OnEvent;
-        --ChatFrame_OnEvent = GRSS_ChatFrame_OnEvent_Hook;
 	ChatFrame_AddMessageEventFilter("CHAT_MSG_WHISPER",GRSS_IsWhisperGRSSWhisper); -- incoming whispers
 	ChatFrame_AddMessageEventFilter("CHAT_MSG_WHISPER_INFORM",GRSS_IsOutgoingWhisperGRSSWhisper); --outgoing whispers
 
@@ -1713,7 +1717,7 @@ function GRSS_CompareVersions()
 		if GRSSNewestVersion then
 			if GRSSNewestVersion~=GRSSVersion then
 				GRSSNewVersionPrinted = true;
-				GRSSPrint("|c00ff0000There is a newer version of the GuildRaidSnapShot mod ("..GRSSNewestVersion..") available.  Please download the newest version from www.dkpsystem.com|r");
+				GRSSPrint("|c00ff0000There is a newer version of the GuildRaidSnapShot mod ("..GRSSNewestVersion..") available.  Please download the newest version from www.dkpsystem.com or run the included GetGRSSDKP.exe program (Windows Only)|r");
 			end
 		end
 	end
@@ -2656,9 +2660,11 @@ function GRSS_GetLoot()
 	for i = 1, GetNumLootItems() do
      		if LootSlotHasItem(i) then
        			local link = GetLootSlotLink(i);
-       			local s, e, color, item = string.find(link, "|c(%x+)|Hitem[:%d%-]+|h%[(.-)%]|h|r");
-			if(color and item and GRSS_Colors[color]) then
-				GRSS_Loot[link]=link;
+			if link ~= nil then
+				local s, e, color, item = string.find(link, "|c(%x+)|Hitem[:%d%-]+|h%[(.-)%]|h|r");
+				if(color and item and GRSS_Colors[color]) then
+					GRSS_Loot[link]=link;
+				end
 			end
      		end
    	end
