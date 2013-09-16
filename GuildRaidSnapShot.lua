@@ -25,6 +25,7 @@ GRSS_Bosses = {
 "Sha of Anger","Salyis's Warband",
 "Tsulong","Lei Shi","Sha of Fear",
 "Jin'rokh the Breaker","Horridon","Tortos","Megaera","Ji-Kun","Durumu the Forgotten","Primordius","Dark Animus","Iron Qon","Twin Consorts","Lei Shen","Ra-den",
+"Immerseus","The Fallen Protectors","Amalgam of Corruption","Sha of Pride","Galakras","Iron Juggernaut","Earthbreaker Haromm","General Nazgrim","Malkorok","Thok the Bloodthirsty","Siegecrafter Blackfuse","Garrosh Hellscream",
 
 
 --[[uncomment for testing the mobs outside shattrath and orgrimmar
@@ -77,6 +78,8 @@ GRSS_Yell_Redirect["Elder Asani"] = "Protectors of the Endless";
 GRSS_Boss_Redirect = {};
 GRSS_Boss_Redirect["Jade Guardian"] = "The Stone Guard";
 GRSS_Boss_Redirect["Jan-xi"] = "Will of the Emperor";
+GRSS_Boss_Redirect["Amalgam of Corruption"] = "Norushen";
+GRSS_Boss_Redirect["Earthbreaker Haromm"] = "Kor'kron Dark Shaman";
 --GRSS_Boss_Redirect["Weakened Mosshoof Stag"] = "Test Redirect";
 
 -- GRSS_BossEmote = events that aren't yells or anything, but something represent "world emotes"
@@ -161,7 +164,7 @@ GRSSHelpMsg = {
 	"!waitlistwho = Show a list of who's on the waiting list",
 };
 
-local GRSSVersion = "2.029";
+local GRSSVersion = "2.030";
 local GRSSUsage = {
 	"Type |c00ffff00/grss <snapshotname>|r to take a snapshot (ex: |c00ffff00/grss Kel'Thuzad|r)",
 	"|c00ffff00/grss loot|r to open a loot prompt to manually record an item being received",
