@@ -28,7 +28,7 @@ GRSS_Bosses = {
 "Immerseus","The Fallen Protectors","Amalgam of Corruption","Sha of Pride","Galakras","Iron Juggernaut","Earthbreaker Haromm","General Nazgrim","Malkorok","Thok the Bloodthirsty","Siegecrafter Blackfuse","Garrosh Hellscream",
 
 
---[[uncomment for testing the mobs outside shattrath and orgrimmar
+--[[ (TESTING) uncomment for testing the mobs outside shattrath and orgrimmar
 "Dreadfang Lurker","Timber Worg","Ironspine Petrifier","Talrendis Scout","Weakened Mosshoof Stag"
 --]]
 
