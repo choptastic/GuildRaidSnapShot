@@ -1,5 +1,5 @@
--- GuildRaidsnapShot Mod
--- Copyright (c) 2005-2013 Sigma Star Systems
+-- GuildRaidSnapShot Mod
+-- Copyright (c) 2005-2014 Sigma Star Systems
 -- Released under the MIT License. See LICENSE.txt for full license
 
 GuildRaidSnapShot_SnapShots = {};
@@ -164,7 +164,7 @@ GRSSHelpMsg = {
 	"!waitlistwho = Show a list of who's on the waiting list",
 };
 
-local GRSSVersion = "2.030";
+local GRSSVersion = "2.031";
 local GRSSUsage = {
 	"Type |c00ffff00/grss <snapshotname>|r to take a snapshot (ex: |c00ffff00/grss Kel'Thuzad|r)",
 	"|c00ffff00/grss loot|r to open a loot prompt to manually record an item being received",
@@ -1540,6 +1540,7 @@ function GRSS_ProcessWhisper(from,msg,lang)
 		if name == "" then
 			name = from;
 		end
+		name = GRSSExtractPlayerName(name);
 		tosend = GRSSGetPlayerDKP(name);
 		for i,v in pairs(tosend) do
 			GRSS_SendWhisper(v, "WHISPER", lang, from);
@@ -1554,6 +1555,7 @@ function GRSS_ProcessWhisper(from,msg,lang)
 		else
 			playername = string.upper(name);
 		end
+		playername = GRSSExtractPlayerName(playername);
 		if GRSS_ItemHistory[playername] ~= nil then
 			for i,v in pairs(GRSS_ItemHistory[playername]) do
 				GRSS_SendWhisper(v,"WHISPER",lang,from);
@@ -1592,6 +1594,15 @@ function GRSS_ProcessWhisper(from,msg,lang)
 				GRSS_SendWhisper(v,"WHISPER",lang,from);
 			end
 		end
+	end
+end
+
+function GRSSExtractPlayerName(playername)
+	s,_,name = string.find(playername, "(.*)-.*");
+	if not(s) then
+		return playername;
+	else
+		return name;
 	end
 end
 

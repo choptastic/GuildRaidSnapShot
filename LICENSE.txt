@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2006-2012, Jesse Gumm of Sigma Star Systems
+Copyright (c) 2006-2014, Jesse Gumm of Sigma Star Systems
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

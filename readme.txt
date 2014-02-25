@@ -1,5 +1,5 @@
 GuildRaidSnapShot Mod
-Copyright (c) 2005-2011 By DKPSystem.com
+Copyright (c) 2005-2014 By DKPSystem.com
 
 See the file LICENSE.txt for licence details
 
