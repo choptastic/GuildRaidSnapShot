@@ -1385,7 +1385,8 @@ function GRSS_ProcessWhisper(from,msg,lang)
 			else
 				bidtype = "";
 			end
-			temp.name = from;
+			name = GRSSExtractPlayerName(from);
+			temp.name = name;
 			if GRSS_BidStyle=="Requests" and GRSS_BidRolls==nil then
 				amt = "R";
 			else
@@ -1410,10 +1411,10 @@ function GRSS_ProcessWhisper(from,msg,lang)
 				if tonumber(amt)~=nil and tonumber(amt) > GRSS_HighBid then
 					GRSS_SendWhisper("You are now the high bidder with "..amt,"WHISPER",lang,from);
 					GRSS_HighBid = tonumber(amt);
-					if GRSS_HighBidder ~= from and GRSS_HighBidder ~= "" then
+					if GRSS_HighBidder ~= name and GRSS_HighBidder ~= "" then
 						GRSS_SendWhisper("You are no longer the high bidder.  The high bid is now "..GRSS_HighBid..".","WHISPER",nil,GRSS_HighBidder);	
 					end
-					GRSS_HighBidder = from;
+					GRSS_HighBidder = name;
 					if GRSS_BidStyle=="Silent Auction" then
 						SendChatMessage("The high bid is now "..amt,"RAID");
 					else
@@ -1429,7 +1430,7 @@ function GRSS_ProcessWhisper(from,msg,lang)
 			end
 			local found=false;
 			for i,v in pairs(GRSS_DKP) do
-				if string.lower(v.name)==string.lower(from) or (GRSS_MainOnly[GRSSCurrentSystem] and GRSS_Alts[string.lower(from)]==string.lower(v.name)) then
+				if string.lower(v.name)==string.lower(name) or (GRSS_MainOnly[GRSSCurrentSystem] and GRSS_Alts[string.lower(name)]==string.lower(v.name)) then
 					if tonumber(GRSS_DKP[i].bid)==nil or (tonumber(amt) ~= nil and tonumber(GRSS_DKP[i].bid) < tonumber(amt)) then
 						GRSS_DKP[i].bid = amt;
 					end
@@ -1438,7 +1439,7 @@ function GRSS_ProcessWhisper(from,msg,lang)
 			end
 			if found==false then
 				temp = {};
-				temp.name = from;
+				temp.name = name;
 				temp.class = "?";
 				temp.spent = "";
 				temp.earned = "";
