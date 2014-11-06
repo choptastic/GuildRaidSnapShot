@@ -164,7 +164,7 @@ GRSSHelpMsg = {
 	"!waitlistwho = Show a list of who's on the waiting list",
 };
 
-local GRSSVersion = "2.031";
+local GRSSVersion = "2.032";
 local GRSSUsage = {
 	"Type |c00ffff00/grss <snapshotname>|r to take a snapshot (ex: |c00ffff00/grss Kel'Thuzad|r)",
 	"|c00ffff00/grss loot|r to open a loot prompt to manually record an item being received",
@@ -286,6 +286,8 @@ function GuildRaidSnapShot_OnLoad(this)
 	this:RegisterEvent("CALENDAR_UPDATE_EVENT");
 	this:RegisterEvent("CALENDAR_UPDATE_EVENT_LIST");
 	this:RegisterEvent("CALENDAR_NEW_EVENT");
+	--
+	--
 	this:RegisterEvent("ADDON_LOADED");
 	DEFAULT_CHAT_FRAME:AddMessage("GuildRaidSnapShot (By DKPSystem.com) Version "..GRSSVersion.." loaded. ");
 	DEFAULT_CHAT_FRAME:AddMessage("Type |c00ffff00/grss|r to get a list of options for GuildRaidSnapShot");
@@ -1972,7 +1974,7 @@ end
 function GRSS_TakeGuildOnly()
 	local members="", level,class,online,rank,notes;
 	GRSS_Guild = {};
-	local n = GetNumGuildMembers(true);
+	local n = GetNumGuildMembers();
 	local NumOnline = 0;
 	for i = 1, n do
 		MemName,rank,_,level,class,_,notes,_,_,online = GetGuildRosterInfo(i);
@@ -2012,7 +2014,7 @@ function GRSS_RaidCommaList()
 	if GetNumGroupMembers()>1 then
 		for i = 1, n do
 			MemName,_,_,_,_,_,zone,Online = GetRaidRosterInfo(i);
-			if Online==1 then
+			if Online then
 				if zone==nil then
 					zone = ""
 				end
@@ -2042,14 +2044,16 @@ function GRSS_GuildCommaList()
 	local online;
 	local zone="";
 	GuildRoster();
-	local n = GetNumGuildMembers(false);
+	local n,_ = GetNumGuildMembers();
 	local NumOnline = 0;
 	for i = 1, n do
 		MemName,_,_,_,_,zone,_,_,online = GetGuildRosterInfo(i);
 		if zone==nil then
 			zone = ""
 		end
-		if online==1 then
+		
+		if online then
+			MemName = GRSS_FixName(MemName);
 			members = members..MemName .. ":" .. zone;
 			if i ~= n then
 				members = members .. ", "
@@ -2060,6 +2064,12 @@ function GRSS_GuildCommaList()
 	return NumOnline,members;
 end
 
+function GRSS_FixName(Name)
+	local name = "";
+	for i in string.gmatch(Name, "[^-]*") do
+		return i;
+	end
+end
 
 function GRSS_WaitCommaList()
 	local num = table.getn(GRSS_WaitingList);
