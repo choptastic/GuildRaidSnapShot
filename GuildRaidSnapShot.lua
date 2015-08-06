@@ -16,9 +16,7 @@ GRSS_Bosses_Old = {"Lucifron","Magmadar","Gehennas","Garr","Baron Geddon","Shazz
 
 -- Cata Bosses
 "Argaloth","Halfus Wyrmbreaker","Theralion","Cho'gall","Magmaw","Omnitron Defense System","Maloriak","Atramedes","Chimaeron","Nefarian","Al'Akir","Sinestra","Shannox","Lord Rhyolith","Beth'tilac","Alysrazor","Baelroc","Majordomo Staghelm","Ragnaros","Volcanus","Morchok","Warlord Zon'ozz","Yor'sahj the Unsleeping","Hagara the Stormbinder","Ultraxion","Warmaster Blackhorn","Deathwing",
-};
 
-GRSS_Bosses = {
 -- MOP Bosses
 "Imperial Vizier Zor'lok","Blade Lord Ta'yak","Garalon","Wind Lord Mel'jarak","Amber-Shaper Un-sok","Grand Empress Shek'zeer",
 "Jade Guardian","Feng the Accursed","Gara'jal the Spiritbinder","The Spirit Kings","Elegon","Jan-xi",
@@ -26,6 +24,14 @@ GRSS_Bosses = {
 "Tsulong","Lei Shi","Sha of Fear",
 "Jin'rokh the Breaker","Horridon","Tortos","Megaera","Ji-Kun","Durumu the Forgotten","Primordius","Dark Animus","Iron Qon","Twin Consorts","Lei Shen","Ra-den",
 "Immerseus","The Fallen Protectors","Amalgam of Corruption","Sha of Pride","Galakras","Iron Juggernaut","Earthbreaker Haromm","General Nazgrim","Malkorok","Thok the Bloodthirsty","Siegecrafter Blackfuse","Garrosh Hellscream",
+};
+
+GRSS_Bosses = {
+-- WOD Bosses
+"Kargath Bladefist", "The Butcher", "Brackenspore", "Tectus", "Pol", "Ko'ragh", "Imperator Mar'gok",
+"Gruul","Oregorger", "Blast Furnace", "Hans'gar", "Flamebender Ka'graz", "Kromog", "Beastlord Darmac","Operator Thogar","Admiral Gar'an","Blackhand",
+"Siegemaster Mar'tak", "Kormrok","Killrogg Deadeye","Gurtogg Bloodboil","Gorefiend","Shadow-Lord Iskar","Socrethar the Eternal","Tyrant Velhari","Fel Lord Zakuun","Xhul'horac","Mannoroth","Archimonde",
+
 
 
 --[[ (TESTING) uncomment for testing the mobs outside shattrath and orgrimmar
@@ -80,6 +86,10 @@ GRSS_Boss_Redirect["Jade Guardian"] = "The Stone Guard";
 GRSS_Boss_Redirect["Jan-xi"] = "Will of the Emperor";
 GRSS_Boss_Redirect["Amalgam of Corruption"] = "Norushen";
 GRSS_Boss_Redirect["Earthbreaker Haromm"] = "Kor'kron Dark Shaman";
+GRSS_Boss_Redirect["Gurtogg Bloodboil"] = "Hellfire High Council";
+GRSS_Boss_Redirect["Siegemaster Mar'tak"] = "Hellfire Assault";
+GRSS_Boss_Redirect["Pol"] = "Twin Ogron";
+GRSS_Boss_Redirect["Admiral Gar'an"] = "Iron Maidens";
 --GRSS_Boss_Redirect["Weakened Mosshoof Stag"] = "Test Redirect";
 
 -- GRSS_BossEmote = events that aren't yells or anything, but something represent "world emotes"
@@ -164,7 +174,7 @@ GRSSHelpMsg = {
 	"!waitlistwho = Show a list of who's on the waiting list",
 };
 
-local GRSSVersion = "2.032";
+local GRSSVersion = "2.033";
 local GRSSUsage = {
 	"Type |c00ffff00/grss <snapshotname>|r to take a snapshot (ex: |c00ffff00/grss Kel'Thuzad|r)",
 	"|c00ffff00/grss loot|r to open a loot prompt to manually record an item being received",
